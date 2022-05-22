@@ -12,6 +12,7 @@ const Container = React.forwardRef(
     )
   }
 )
+Container.displayName = "Container";
 
 function ContentContainer(props) {
   return (
