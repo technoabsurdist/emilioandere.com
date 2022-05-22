@@ -30,7 +30,7 @@ function TableRow({ href, title, subtitle, date }) {
         {title}
       </strong>
       <span className="w-full border-t border-gray-300 border-dashed shrink dark:border-gray-800" />
-      {subtitle && <span className="flex-none text-tertiary">{subtitle}</span>}
+      {subtitle && <span className="flex-none text-tertiary text-sm md:text-base">{subtitle}</span>}
       {date && <span className="flex-none font-mono text-quaternary hidden md:flex">{date}</span>}
     </a>
   )
@@ -101,7 +101,7 @@ const organizations = [
     date: 'Sep 2019-May 2022',
   },
   {
-    href: 'https://thedailytexan.com/staff_name/ishan-shah/https://designdetails.fm',
+    href: 'https://thedailytexan.com/staff_name/ishan-shah/',
     title: 'The Daily Texan',
     subtitle: 'Opinion Columnist',
     date: 'Jan 2020-May 2020',
@@ -139,7 +139,7 @@ export function Intro() {
                   date={''}
                 />
                 <TableRow
-                  href={'/github'}
+                  href={'https://github.com/ishan0102'}
                   title={'GitHub'}
                   subtitle={'Follow'}
                   date={''}
@@ -157,7 +157,7 @@ export function Intro() {
                   date={''}
                 />
                 <TableRow
-                  href={'https://open.spotify.com/user/ishan0102'}
+                  href={'https://open.spotify.com/user/ishan0102?si=510c088c653249d2'}
                   title={'Spotify'}
                   subtitle={'Follow'}
                   date={''}
