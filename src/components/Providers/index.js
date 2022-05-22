@@ -9,11 +9,11 @@ const defaultSEO = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ishanshah.me',
+    url: 'https://www.ishanshah.me',
     site_name: 'Ishan Shah',
     images: [
       {
-        url: 'https://ishanshah.me/static/og/default.png',
+        url: 'https://www.ishanshah.me/static/og/default.png',
         alt: 'Ishan Shah',
       },
     ],
@@ -48,6 +48,25 @@ export function Providers() {
           name="theme-color"
           content="rgb(23, 23, 23)"
           media="(prefers-color-scheme: dark)"
+        />
+
+        {/* OpenGraph */}
+        <meta property="og:title" content="Ishan Shah" />
+        <meta property="og:image" content="https://www.ishanshah.me/static/og/default.png" />
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script async src={"https://www.googletagmanager.com/gtag/js?id=G-CEQVMRYG8Q"}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-CEQVMRYG8Q', {
+            page_path: window.location.pathname,
+          });
+        `,
+          }}
         />
       </Head>
     </>
