@@ -1,9 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { MapPin } from 'react-feather'
-
-import { Detail } from '../Details/Detail'
-
+import { Detail } from '../Detail'
 
 function SectionTitle(props) {
   return (
@@ -108,14 +105,13 @@ const organizations = [
   },
 ]
 
-export function Intro() {
+export function Home() {
   return (
     <Detail.Container>
       <Detail.ContentContainer>
         <div className="pb-24 space-y-8 md:space-y-16">
-        
-        {/* Bio */}
-        <SectionContainer>
+          {/* Bio */}
+          <SectionContainer>
             <SectionTitle />
             <SectionContent>
               <div className="prose text-primary">
