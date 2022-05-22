@@ -120,8 +120,8 @@ export function Intro() {
             <SectionContent>
               <div className="prose text-primary">
                 <p>
-                  Hey, I'm Ishan. I'm an engineer, student, writer, and software tinkerer.
-                  I'm currently building internal tools for YouTube at Google.
+                  Hey, I&apos;m Ishan. I&apos;m an engineer, student, writer, and software tinkerer.
+                  I&apos;m currently building internal tools for YouTube at Google.
                 </p>
               </div>
             </SectionContent>
