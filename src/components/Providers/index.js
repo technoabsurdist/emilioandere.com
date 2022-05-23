@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import { DefaultSeo } from 'next-seo'
 import * as React from 'react'
 
@@ -55,8 +56,8 @@ export function Providers() {
         <meta property="og:image" content="https://www.ishanshah.me/static/og/default.png" />
 
         {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script async src={"https://www.googletagmanager.com/gtag/js?id=G-CEQVMRYG8Q"}></script>
-        <script
+        <Script async src={"https://www.googletagmanager.com/gtag/js?id=G-CEQVMRYG8Q"}></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
           window.dataLayer = window.dataLayer || [];

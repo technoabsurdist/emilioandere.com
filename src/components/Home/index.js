@@ -5,7 +5,7 @@ import { Detail } from '../Detail'
 function SectionTitle(props) {
   return (
     <h4
-      className="col-span-2 pt-8 text-lg font-extrabold text-black dark:text-white md:pt-0 md:text-right md:text-base md:font-normal md:text-opacity-40"
+      className="col-span-2 text-lg font-semibold text-black dark:text-white md:text-right md:text-base md:font-normal md:text-opacity-40"
       {...props}
     />
   )
@@ -36,7 +36,7 @@ function TableRow({ href, title, subtitle, date }) {
 function SectionContainer(props) {
   return (
     <div
-      className="grid items-start grid-cols-1 gap-6 md:grid-cols-12"
+      className="grid items-start grid-cols-1 md:grid-cols-12 gap-3 md:gap-6"
       {...props}
     />
   )
@@ -109,26 +109,47 @@ export function Home() {
   return (
     <Detail.Container>
       <Detail.ContentContainer>
-        <div className="pb-24 space-y-8 md:space-y-16">
+        <div className="pb-24 space-y-12 md:space-y-16">
           {/* Bio */}
           <SectionContainer>
             <SectionTitle />
             <SectionContent>
               <div className="prose">
                 <p>
-                  Hey, I&apos;m Ishan. I&apos;m an engineer, student, <a href="https://ishan.coffee">writer</a>,
-                  and <a href="https://github.com/ishan0102">software tinkerer</a>. I&apos;m currently building 
-                  internal tools for YouTube at Google.
+                  Hey, I&apos;m Ishan. I&apos;m an engineer, student,{' '}
+                  <a 
+                    href="https://ishan.coffee" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    writer
+                  </a>
+                  , and{' '}
+                  <a 
+                    href="https://github.com/ishan0102" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    software tinkerer
+                  </a>
+                  . I&apos;m currently building internal tools for YouTube at Google.
                 </p>
                 <p>
-                  Before Google, I developed a machine learning pipeline at Capital One to detect fraud in
-                  car dealerships using customer reviews. I've also <a href="https://hai.ischool.utexas.edu/">
-                  researched responsible AI</a>, built a tool to summarize emails with a large language model,
-                  and taught a data structures class.
+                  Before Google, I developed a machine learning pipeline at Capital One 
+                  to detect fraud in car dealerships using customer reviews. I&apos;ve also{' '}
+                  <a 
+                    href="https://hai.ischool.utexas.edu/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    researched responsible AI
+                  </a>
+                  , built a tool to summarize emails with a large language model, and 
+                  taught a data structures class.
                 </p>
                 <p>
-                  I usually spend my time playing spikeball, exploring coffee shops, or wandering around
-                  national parks. Reach out if you&apos;d like to chat!
+                  I usually spend my time playing spikeball, exploring coffee shops, or 
+                  wandering around national parks. Reach out if you&apos;d like to chat!
                 </p>
               </div>
             </SectionContent>
