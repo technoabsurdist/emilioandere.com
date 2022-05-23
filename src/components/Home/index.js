@@ -114,10 +114,21 @@ export function Home() {
           <SectionContainer>
             <SectionTitle />
             <SectionContent>
-              <div className="prose text-primary">
+              <div className="prose">
                 <p>
-                  Hey, I&apos;m Ishan. I&apos;m an engineer, student, writer, and software tinkerer.
-                  I&apos;m currently building internal tools for YouTube at Google.
+                  Hey, I&apos;m Ishan. I&apos;m an engineer, student, <a href="https://ishan.coffee">writer</a>,
+                  and <a href="https://github.com/ishan0102">software tinkerer</a>. I&apos;m currently building 
+                  internal tools for YouTube at Google.
+                </p>
+                <p>
+                  Before Google, I developed a machine learning pipeline at Capital One to detect fraud in
+                  car dealerships using customer reviews. I've also <a href="https://hai.ischool.utexas.edu/">
+                  researched responsible AI</a>, built a tool to summarize emails with a large language model,
+                  and taught a data structures class.
+                </p>
+                <p>
+                  I usually spend my time playing spikeball, exploring coffee shops, or wandering around
+                  national parks. Reach out if you&apos;d like to chat!
                 </p>
               </div>
             </SectionContent>
