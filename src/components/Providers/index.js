@@ -54,22 +54,22 @@ export function Providers() {
         {/* OpenGraph */}
         <meta property="og:title" content="Ishan Shah" />
         <meta property="og:image" content="https://www.ishanshah.me/static/og/default.png" />
-
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script async src={"https://www.googletagmanager.com/gtag/js?id=G-CEQVMRYG8Q"}></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-CEQVMRYG8Q', {
-            page_path: window.location.pathname,
-          });
-        `,
-          }}
-        />
       </Head>
+      
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script async src={"https://www.googletagmanager.com/gtag/js?id=G-CEQVMRYG8Q"}></Script>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CEQVMRYG8Q', {
+          page_path: window.location.pathname,
+        });
+      `,
+        }}
+      />
     </>
   )
 }
