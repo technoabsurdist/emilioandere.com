@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function Nav() {
   return (
     <nav className="flex items-center justify-between flex-wrap p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
+      <div className="flex items-center flex-shrink-0 text-white ml-0 md:ml-4 mr-6">
         <Link href="/">
           <a className="inline-block text-primary text-xl md:text-2xl font-semibold hover:text-indigo-500">
             Ishan Shah
@@ -11,7 +11,7 @@ export function Nav() {
         </Link>
       </div>
       <div className="flex items-center w-auto">
-        <div className="text-sm md:text-base font-medium md:flex-grow">
+        <div className="text-sm md:text-base font-normal md:font-medium md:flex-grow">
           <Link href="/projects">
             <a className="inline-block mr-4 md:mr-8 text-primary hover:text-indigo-500">
               Projects

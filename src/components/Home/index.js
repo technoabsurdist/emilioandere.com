@@ -109,7 +109,7 @@ export function Home() {
   return (
     <Detail.Container>
       <Detail.ContentContainer>
-        <div className="pb-24 space-y-12 md:space-y-16">
+        <div className="pb-24 md:pb-4 space-y-12 md:space-y-16">
           {/* Bio */}
           <SectionContainer>
             <SectionTitle />
