@@ -23,7 +23,7 @@ function Project({ name, date, tools, tagline, description, tag, website, github
       {/* Tools */}
       <div className="flex flex-wrap pt-1">
         {tools.map((tool, index) => (
-          <div className="border border-off-black rounded-full px-3 py-1 mr-2 mb-2 dark:border-gray-300">
+          <div key={index} className="border border-off-black rounded-full px-3 py-1 mr-2 mb-2 dark:border-gray-300">
             <p className="text-xs font-medium text-center text-off-black dark:text-gray-300">
               {tool}
             </p>
@@ -64,27 +64,27 @@ export function Projects() {
     <div className="relative flex max-h-screen w-full flex-col overflow-y-auto">
       <div className="mx-auto w-full max-w-7xl px-4 pb-32 md:px-8">
         {/* Filtering */}
-        {/* <p class="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p> */}
-        <div class="justify-center flex pt-4 lg:pt-0">
+        {/* <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p> */}
+        <div className="justify-center flex pt-4 lg:pt-0">
           <button 
-            id="personal" class="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-indigo-400 focus:outline-none border-2 border-indigo-400"
+            id="personal" className="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-indigo-400 focus:outline-none border-2 border-indigo-400"
             // onclick={toggleProjects(this.id)}
           >
             Personal
           </button>
-          <button id="school" class="p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium text-gray-100 rounded bg-green-500 focus:outline-none border-2 border-green-500"
+          <button id="school" className="p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium text-gray-100 rounded bg-green-500 focus:outline-none border-2 border-green-500"
             // onclick={toggleProjects(this.id)}
           >
             School
           </button>
-          <button id="other" class="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-red-400 focus:outline-none border-2 border-red-400"
+          <button id="other" className="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-red-400 focus:outline-none border-2 border-red-400"
             // onclick={toggleProjects(this.id)}
           >
             Hackathon
           </button>
         </div>
 
-        <div class="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
           {ProjectData.projectsList.map((project, index) => (
             <Project
               key={index}
