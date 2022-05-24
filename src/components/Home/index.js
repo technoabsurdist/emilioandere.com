@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { MapPin } from 'react-feather'
 import { Detail } from '../Detail'
+import { HomeData } from '../Data/HomeData'
 
 function SectionTitle(props) {
   return (
     <h4
-      className="col-span-2 text-lg font-semibold text-black dark:text-white md:text-right md:text-base md:font-normal md:text-opacity-40"
+      className="col-span-2 text-lg font-semibold text-off-black dark:text-off-white md:text-right md:text-base md:font-normal md:text-opacity-40"
       {...props}
     />
   )
@@ -42,69 +43,6 @@ function SectionContainer(props) {
   )
 }
 
-const workHistory = [
-  {
-    href: 'https://www.youtube.com/',
-    title: 'Google',
-    subtitle: 'Software Engineering Intern',
-    date: 'May 2022-Present\u00a0',
-  },
-  {
-    href: 'https://users.ece.utexas.edu/~vallathn/ee422c/',
-    title: 'UT Austin ECE',
-    subtitle: 'Teaching Assistant',
-    date: 'Aug 2021-Dec 2021',
-  },
-  {
-    href: 'https://www.capitalone.com/tech/machine-learning/',
-    title: 'Capital One',
-    subtitle: 'Software Engineering Intern',
-    date: 'May 2021-Aug 2021',
-  },
-  {
-    href: 'https://www.aaktelescience.com/home',
-    title: 'AAK Telescience',
-    subtitle: 'Software Engineering Intern',
-    date: 'May 2020-Aug 2020',
-  },
-]
-
-const research = [
-  {
-    href: 'https://hai.ischool.utexas.edu/',
-    title: 'Human-AI Interaction Lab',
-    subtitle: 'Research Assistant',
-    date: 'Aug 2021-Dec 2021',
-  },
-  {
-    href: 'https://nanotech.utdallas.edu/',
-    title: 'UTD NanoTech Institute',
-    subtitle: 'Research Assistant',
-    date: 'Jun 2018-Aug 2018',
-  },
-]
-
-const organizations = [
-  {
-    href: 'https://rodenleadership.wixsite.com/roden',
-    title: 'Roden Leadership Program',
-    subtitle: 'Project Lead',
-    date: 'Feb 2019-Present\u00a0',
-  },
-  {
-    href: 'https://www.ieee.ece.utexas.edu/',
-    title: 'IEEE UT Austin',
-    subtitle: 'Corporate Director',
-    date: 'Sep 2019-May 2022',
-  },
-  {
-    href: 'https://thedailytexan.com/staff_name/ishan-shah/',
-    title: 'The Daily Texan',
-    subtitle: 'Opinion Columnist',
-    date: 'Jan 2020-May 2020',
-  },
-]
-
 export function Home() {
   return (
     <Detail.Container>
@@ -132,7 +70,8 @@ export function Home() {
                   >
                     software tinkerer
                   </a>
-                  . I&apos;m currently building internal tools for YouTube at Google.
+                  . I&apos;m currently building internal tools for YouTube at Google and studying
+                  Computer Engineering and Math at UT Austin.
                 </p>
                 <p>
                   Before Google, I developed a machine learning pipeline at Capital One 
@@ -220,7 +159,7 @@ export function Home() {
             <SectionTitle>Work</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
-                {workHistory.map((job) => (
+                {HomeData.workHistory.map((job) => (
                   <TableRow
                     href={job.href}
                     title={job.title}
@@ -238,7 +177,7 @@ export function Home() {
             <SectionTitle>Research</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
-                {research.map((org) => (
+                {HomeData.research.map((org) => (
                   <TableRow
                     href={org.href}
                     title={org.title}
@@ -256,7 +195,7 @@ export function Home() {
             <SectionTitle>Organizations</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
-                {organizations.map((org) => (
+                {HomeData.organizations.map((org) => (
                   <TableRow
                     href={org.href}
                     title={org.title}
