@@ -62,7 +62,7 @@ function Project({ name, date, tools, tagline, description, tag, website, github
 export function Projects() {
   return (
     <div className="relative flex max-h-screen w-full flex-col overflow-y-auto">
-      <div className="mx-auto w-full max-w-7xl px-4 pb-32 md:px-8">
+      <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
         {/* Filtering */}
         {/* <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p> */}
         <div className="justify-center flex pt-4 lg:pt-0">

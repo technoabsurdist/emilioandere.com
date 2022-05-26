@@ -56,7 +56,7 @@ const projectsList = [
         with Firebase.
       `,
     tag: "Personal",
-    website: "https://peernet.app/",
+    website: "~",
     github: "~",
   },
   {
@@ -85,7 +85,7 @@ const projectsList = [
       `,
     tag: "School",
     github: "https://github.com/JimothyGreene/EE461L-Group2-FinalProject",
-    website: "https://ee461l-final-project-group2-poc6jfma5a-uc.a.run.app/"
+    website: "~"
   },
   {
     name: "Personal Website",
