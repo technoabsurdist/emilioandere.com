@@ -52,7 +52,7 @@ export function Providers() {
         />
 
         {/* OpenGraph */}
-        <meta property="og:title" content="Ishan Shah" />
+        <meta property="og:title" content="Ishan Shah" key="title" />
         <meta property="og:image" content="https://www.ishanshah.me/static/og/default.png" />
       </Head>
 
