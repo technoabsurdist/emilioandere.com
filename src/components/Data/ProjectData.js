@@ -1,8 +1,79 @@
 const projectsList = [
   {
+    name: "Ishan's Cafe",
+    date: "Summer 2022",
+    tools: ["Hugo", "Quartz"],
+    tagline: "Home to my thoughts",
+    description: `
+        I built Ishan's Cafe using Quartz, a template developed by Jacky Zhao. The site supports
+        "Control + K" for quick search, Markdown for individual posts, and an interactive knowledge
+        graph that lets you see how notes are connected. I love the setup because it's designed
+        to make the writing experience as flexible, yet effortless as possible.
+      `,
+    tag: "Personal",
+    links: {
+      "Website": "https://ishan.coffee",
+      "GitHub": "https://github.com/ishan0102/thoughts",
+    },
+  },
+  {
+    name: "Personal Website",
+    date: "Summer 2022",
+    tools: ["Next.js", "Tailwind CSS", "Netlify"],
+    tagline: "What you're looking at",
+    description: `
+        This website is written in Next.js with reusable components styled with Tailwind CSS.
+        Originally, I wrote my personal website in pure HTML but decided to redesign it now
+        that I have more web dev experience.
+      `,
+    tag: "Personal",
+    links: {
+      "Website": "/",
+      "GitHub": "https://github.com/ishan0102/ishanshah.me",
+    },
+  },
+  {
+    name: "Pictionary",
+    date: "Spring 2022",
+    tools: ["TensorFlow", "GANs", "Computer Vision"],
+    tagline: "Play Pictionary against a computer",
+    description: `
+        This is my final project for Computer Vision (EE 379V). This project uses computer vision 
+        to recreate a computer-based game of Pictionary, in which a human player draws an image 
+        and the computer attempts to guess the drawing. The model was trained on Google's Quick, 
+        Draw! dataset, which contains over 50 million sketches. This recurrent neural network
+        was then implemented in a React app that can efficiently classify sketches of common
+        objects with ~40% accuracy.
+      `,
+    tag: "School",
+    links: {
+      "Paper": "/static/pdf/pictionary.pdf",
+      "GitHub": "https://github.com/ishan0102/pictionary",
+    },
+  },
+  {
+    name: "Commentary",
+    date: "Spring 2022",
+    tools: ["Python", "NLTK", "Scikit-learn", "XGBoost", "Twitter API", "FastAPI"],
+    tagline: "Critique on OpenAI's latest model",
+    description: `
+        For my final project in Data Science Principles (EE 461P), I trained a model to
+        predict what the sentiment of a tweet's replies would look like given a tweet.
+        I got to explore natural language processing tools like NLTK and TF-IDF and
+        learned how to script API requests that follow rate limits. I also created and
+        deployed a website using Google Cloud Platform to demo the app.
+      `,
+    tag: "School",
+    links: {
+      "Website": "https://twittercommentary.netlify.app",
+      "GitHub": "https://github.com/ishan0102/commentary",
+      "Poster": "/static/pdf/commentary.pdf",
+    },
+  },
+  {
     name: "Exploring Bias in GPT-3",
     date: "Fall 2021",
-    tools: ["NLP", "GPT-3"],
+    tools: ["GPT-3", "NLP"],
     tagline: "Critique on OpenAI's latest model",
     description: `
         I wrote this paper for Computational Linguistics (LIN 313).
@@ -11,8 +82,9 @@ const projectsList = [
         and analyzing the probability distribution of the output (male, female, etc.).
       `,
     tag: "School",
-    website: "/static/pdf/gpt3-report.pdf",
-    github: "~",
+    links: {
+      "Paper": "/static/pdf/gpt3.pdf",
+    },
   },
   {
     name: "Pintos",
@@ -26,8 +98,9 @@ const projectsList = [
         eviction, synchronization), and a file system (file growth, indexed files, subdirectories).
       `,
     tag: "School",
-    website: "https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html",
-    github: "~",
+    links: {
+      "Website": "https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html",
+    },
   },
   {
     name: "Yash",
@@ -41,8 +114,8 @@ const projectsList = [
         deeply understanding low-level computing.
       `,
     tag: "School",
-    website: "~",
-    github: "~",
+    links: {
+    },
   },
   {
     name: "PeerNet",
@@ -56,8 +129,8 @@ const projectsList = [
         with Firebase.
       `,
     tag: "Personal",
-    website: "~",
-    github: "~",
+    links: {
+    },
   },
   {
     name: "Vitali",
@@ -70,8 +143,10 @@ const projectsList = [
         We built it for the DaVita Product Management Hackathon and won first place.
       `,
     tag: "Other",
-    github: "https://github.com/ishan0102/vitali",
-    website: "https://devpost.com/software/vitali"
+    links: {
+      "Website": "https://devpost.com/software/vitali",
+      "GitHub": "https://github.com/ishan0102/vitali",
+    },
   },
   {
     name: "Longhorn Computing Services",
@@ -84,21 +159,9 @@ const projectsList = [
         computing resources.
       `,
     tag: "School",
-    github: "https://github.com/JimothyGreene/EE461L-Group2-FinalProject",
-    website: "~"
-  },
-  {
-    name: "Personal Website",
-    date: "Winter 2021",
-    tools: ["Tailwind CSS", "HTML", "Jekyll"],
-    tagline: "What you're looking at",
-    description: `
-        This website is written in pure HTML and styled with Tailwind. It's hosted
-        on GitHub pages. All of the design and development was done by me.
-      `,
-    tag: "Personal",
-    github: "~",
-    website: "/"
+    links: {
+      "GitHub": "https://github.com/JimothyGreene/EE461L-Group2-FinalProject",
+    },
   },
   {
     name: "Day in Review",
@@ -111,8 +174,10 @@ const projectsList = [
         It was created out of frustration with unnecessarily long emails.
       `,
     tag: "Personal",
-    github: "https://github.com/DayInReview/day-in-review",
-    website: "http://dayinreview.org/"
+    links: {
+      "Website": "http://dayinreview.org/",
+      "GitHub": "https://github.com/DayInReview/day-in-review",
+    },
   },
   {
     name: "HackTX 2020",
@@ -125,8 +190,10 @@ const projectsList = [
         skills by providing feedback on tone and speech style.
       `,
     tag: "Other",
-    github: "https://github.com/ishan0102/hacktx-20",
-    website: "https://devpost.com/software/nlp-speech-analysis"
+    links: {
+      "Website": "https://devpost.com/software/nlp-speech-analysis",
+      "GitHub": "https://github.com/ishan0102/hacktx-20",
+    },
   },
   {
     name: "Silk Road",
@@ -140,8 +207,8 @@ const projectsList = [
         a full-stack app with a database from scratch.
       `,
     tag: "School",
-    github: "~",
-    website: "~"
+    links: {
+    },
   },
   {
     name: "Runkeeper",
@@ -155,8 +222,9 @@ const projectsList = [
         making an app.
       `,
     tag: "Personal",
-    github: "https://github.com/ishan0102/runkeeper",
-    website: "~"
+    links: {
+      "GitHub": "https://github.com/ishan0102/runkeeper",
+    },
   },
   {
     name: "T-Rex Run",
@@ -169,8 +237,10 @@ const projectsList = [
         a slide potentiometer for controls, an LCD, and a DAC for sound.
       `,
     tag: "School",
-    github: "https://github.com/ishan0102/t-rex-run",
-    website: "https://www.youtube.com/watch?v=mLqsLVLjyEE"
+    links: {
+      "Website": "https://www.youtube.com/watch?v=mLqsLVLjyEE",
+      "GitHub": "https://github.com/ishan0102/t-rex-run",
+    },
   },
 ]
 

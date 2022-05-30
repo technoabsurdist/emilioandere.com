@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import { ProjectData } from '../Data/ProjectData'
 
-function Project({ name, date, tools, tagline, description, tag, website, github }) {
+function Project({ name, date, tools, tagline, description, tag, links }) {
   return (
     <div className="px-2 md:px-8 py-4">
       {/* Name and Tag */}
@@ -36,68 +37,84 @@ function Project({ name, date, tools, tagline, description, tag, website, github
         {description}
       </p>
 
-      {/* Website */}
-      <Link href={website}>
-        <a className={`bg-off-white border border-off-black hover:bg-off-black hover:text-off-white font-medium text-sm py-2 px-4 mr-2 rounded text-center dark:bg-off-black dark:text-off-white dark:hover:bg-off-white dark:border-off-white dark:hover:text-off-black ${website == "~" ? "hidden" : "inline-block"}`}
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          Website
-        </a>
-      </Link>
-
-      {/* GitHub */}
-      <Link href={github}>
-        <a className={`bg-off-white border border-off-black hover:bg-off-black hover:text-off-white font-medium text-sm py-2 px-4 rounded text-center dark:bg-off-black dark:text-off-white dark:hover:bg-off-white dark:border-off-white dark:hover:text-off-black ${github == "~" ? "hidden" : "inline-block"}`}
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      </Link>
+      {/* Links */}
+      <div className="flex flex-wrap pt-1">
+        {Object.entries(links).map(([key, value], index) => (
+          <div key={index}>
+            <Link href={value}>
+              <a className={"bg-off-white border border-off-black hover:bg-off-black hover:text-off-white font-medium text-sm py-2 px-3 mr-2 rounded text-center dark:bg-off-black dark:text-off-white dark:hover:bg-off-white dark:border-off-white dark:hover:text-off-black"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {key}
+              </a>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
 
 export function Projects() {
+  const [filter, setFilter] = useState({
+      "School": true,
+      "Personal": true,
+      "Other": true,
+    }
+  )
+
+  const handleFilter = (tag) => {
+    setFilter(prevState => ({
+      ...prevState,
+      [tag]: !prevState[tag]
+    }))
+  }
+    
+
   return (
     <div className="relative flex max-h-screen w-full flex-col overflow-y-auto">
       <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
         {/* Filtering */}
-        {/* <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p> */}
+        <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
         <div className="justify-center flex pt-4 lg:pt-0">
-          <button 
-            id="personal" className="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-indigo-400 focus:outline-none border-2 border-indigo-400"
-            // onclick={toggleProjects(this.id)}
-          >
+          <button
+            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Personal'] ? 'bg-indigo-400 border-indigo-400 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            onClick={() => handleFilter("Personal")}
+            >
             Personal
           </button>
-          <button id="school" className="p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium text-gray-100 rounded bg-green-500 focus:outline-none border-2 border-green-500"
-            // onclick={toggleProjects(this.id)}
-          >
+          <button 
+            className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['School'] ? 'bg-green-500 border-green-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            onClick={() => handleFilter("School")}
+            >
             School
           </button>
-          <button id="other" className="p-2 sm:px-4 sm:py-2 text-sm font-medium text-gray-100 rounded bg-red-400 focus:outline-none border-2 border-red-400"
-            // onclick={toggleProjects(this.id)}
+          <button 
+            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Other'] ? 'bg-red-400 border-red-400 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            onClick={() => handleFilter("Other")}
           >
-            Hackathon
+            Other
           </button>
         </div>
 
         <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
-          {ProjectData.projectsList.map((project, index) => (
-            <Project
-              key={index}
-              name={project.name}
-              date={project.date}
-              tools={project.tools}
-              tagline={project.tagline}
-              description={project.description}
-              tag={project.tag}
-              website={project.website}
-              github={project.github}
-            />
-          ))}
+          {ProjectData.projectsList.map((project, index) => {
+            if (filter[project.tag]) {
+              return <Project
+                key={index}
+                name={project.name}
+                date={project.date}
+                tools={project.tools}
+                tagline={project.tagline}
+                description={project.description}
+                tag={project.tag}
+                website={project.website}
+                github={project.github}
+                links={project.links}
+              />
+            }
+          })}
         </div>
       </div>
     </div>
