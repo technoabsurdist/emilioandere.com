@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { ProjectData } from '../Data/ProjectData'
+import { ProjectData } from '../../data/ProjectData'
 
 function Project({ name, date, tools, tagline, description, tag, links }) {
   return (
@@ -77,7 +77,7 @@ export function Projects() {
       <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
         {/* Filtering */}
         <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
-        <div className="justify-center flex pt-4 lg:pt-0">
+        <div className="justify-center flex pt-2">
           <button
             className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Personal'] ? 'bg-indigo-400 border-indigo-400 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
             onClick={() => handleFilter("Personal")}

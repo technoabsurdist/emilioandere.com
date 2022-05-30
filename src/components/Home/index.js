@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { MapPin } from 'react-feather'
 import { Detail } from '../Detail'
-import { HomeData } from '../Data/HomeData'
+import { HomeData } from '../../data/HomeData'
 
 function SectionTitle(props) {
   return (
