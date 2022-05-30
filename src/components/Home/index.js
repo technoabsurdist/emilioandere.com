@@ -143,7 +143,7 @@ export function Home() {
                 width={600}
                 height={300}
                 layout="responsive"
-                className="rounded-2xl"
+                className="rounded-xl"
                 quality={100}
                 alt="Map of San Bruno with blue location dot in the middle"
               />
