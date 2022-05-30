@@ -207,6 +207,24 @@ export function Home() {
               </div>
             </SectionContent>
           </SectionContainer>
+
+          {/* Spotify Widget */}
+          {/* <div class="pb-10 flex flex-col">
+            <div class="flex justify-center">
+              <iframe id="spotify-track" class="rounded-xl" src="https://open.spotify.com/embed/track/0utlOiJy2weVl9WTkcEWHy" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              <button class="ml-4 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rounded-md fill-current text-black hover:text-indigo-500 transition duration-300" viewBox="0 0 16 16">
+                  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                </svg>
+              </button>
+            </div>
+          </div> */}
+          <SectionContainer>
+            <SectionTitle>Music</SectionTitle>
+            <SectionContent>
+              <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/0y58YIsqNmmY5Bh3f4p0Vl?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </SectionContent>
+          </SectionContainer>
         </div>
       </Detail.ContentContainer>
     </Detail.Container>
