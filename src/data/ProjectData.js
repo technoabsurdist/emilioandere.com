@@ -165,7 +165,7 @@ const projectsList = [
   },
   {
     name: "Day in Review",
-    date: "Fall 2021",
+    date: "Fall 2020",
     tools: ["Scikit-learn", "NLP", "Electron JS", "Node.js", "React"],
     tagline: "Email summarizer",
     description: `
