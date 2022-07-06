@@ -70,8 +70,8 @@ export function Home() {
                   >
                     software tinkerer
                   </a>
-                  . I&apos;m currently building internal tools for YouTube at Google and studying
-                  Computer Engineering and Math at UT Austin.
+                  . I&apos;m currently working on video processing and ML infrastructure at YouTube
+                  and studying Computer Engineering and Math at UT Austin.
                 </p>
                 <p>
                   Before Google, I developed a machine learning pipeline at Capital One 
