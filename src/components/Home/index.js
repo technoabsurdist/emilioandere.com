@@ -6,7 +6,7 @@ import { HomeData } from '../../data/HomeData'
 function SectionTitle(props) {
   return (
     <h4
-      className="col-span-2 text-lg font-semibold text-off-black dark:text-off-white md:text-right md:text-base md:font-normal md:text-opacity-40"
+      className="col-span-2 text-lg font-semibold text-primary md:text-right md:text-base md:font-normal md:text-opacity-40"
       {...props}
     />
   )
@@ -54,7 +54,7 @@ export function Home() {
             <SectionContent>
               <div className="prose">
                 <p>
-                  Hey, I&apos;m Ishan. I&apos;m an engineer, student,{' '}
+                  Hey, I&apos;m Ishan. I&apos;m a software engineer, student,{' '}
                   <a 
                     href="https://ishan.coffee" 
                     target="_blank" 
@@ -68,10 +68,10 @@ export function Home() {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    software tinkerer
+                    tinkerer
                   </a>
-                  . I&apos;m currently working on video processing and ML infrastructure at YouTube
-                  and studying Computer Engineering and Math at UT Austin.
+                  . I&apos;m currently working on ML infrastructure and monitoring problems at 
+                  YouTube and studying Computer Engineering and Math at UT Austin.
                 </p>
                 <p>
                   Before Google, I developed a machine learning pipeline at Capital One 
@@ -88,7 +88,7 @@ export function Home() {
                 </p>
                 <p>
                   I usually spend my time playing spikeball, exploring coffee shops, or 
-                  wandering around national parks. Reach out if you&apos;d like to chat!
+                  wandering around national parks (attempted to hike Half Dome most recently).
                 </p>
               </div>
             </SectionContent>
@@ -209,20 +209,22 @@ export function Home() {
           </SectionContainer>
 
           {/* Spotify Widget */}
-          {/* <div class="pb-10 flex flex-col">
-            <div class="flex justify-center">
-              <iframe id="spotify-track" class="rounded-xl" src="https://open.spotify.com/embed/track/0utlOiJy2weVl9WTkcEWHy" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-              <button class="ml-4 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="rounded-md fill-current text-black hover:text-indigo-500 transition duration-300" viewBox="0 0 16 16">
-                  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-                </svg>
-              </button>
-            </div>
-          </div> */}
           <SectionContainer>
             <SectionTitle>Music</SectionTitle>
             <SectionContent>
-              <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/0y58YIsqNmmY5Bh3f4p0Vl?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/12DxIGMOK6o2ZQ5PdT8Hzv?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </SectionContent>
+          </SectionContainer>
+
+          {/* Footer */}
+          <SectionContainer>
+            <SectionTitle></SectionTitle>
+            <SectionContent>
+              <div className="flex justify-center">
+                <div className="prose">
+                  Design inspired by <a href="https://www.brianlovin.com" target="_blank" rel="noopener noreferrer">Brian Lovin</a>
+                </div>
+              </div>
             </SectionContent>
           </SectionContainer>
         </div>
