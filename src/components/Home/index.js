@@ -70,12 +70,25 @@ export function Home() {
                   >
                     tinkerer
                   </a>
-                  . I&apos;m currently working on ML infrastructure and monitoring problems at 
-                  YouTube and studying Computer Engineering and Math at UT Austin.
+                  . I&apos;m currently building{' '}
+                  <a
+                    href="https://unrealspeech.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Unreal Speech
+                  </a>
+                  , a new text-to-speech startup focused on delivering affordable, authentic
+                  voice engines. I&apos;m also wrapping up a double major in computer engineering
+                  and math at UT Austin.
                 </p>
                 <p>
-                  Before Google, I developed a machine learning pipeline at Capital One 
-                  to detect fraud in car dealerships using customer reviews. I&apos;ve also{' '}
+                  I interned at YouTube this past summer and worked on making ML classification
+                  infrastructure more reliable. Before that, I developed a natural language processing 
+                  pipeline at Capital One to detect fraud in car dealerships using customer reviews.
+                </p>
+                <p>
+                  I&apos;ve also{' '}
                   <a 
                     href="https://hai.ischool.utexas.edu/" 
                     target="_blank" 
@@ -83,12 +96,13 @@ export function Home() {
                   >
                     researched responsible AI
                   </a>
-                  , built a tool to summarize emails with a large language model, and 
-                  taught a data structures class.
+                  {' '}to tackle Austin homelessness, built a tool to summarize emails, and 
+                  taught a couple hundred students through a combination of teaching classes
+                  and tutoring.
                 </p>
                 <p>
-                  I usually spend my time playing spikeball, exploring coffee shops, or 
-                  wandering around national parks (attempted to hike Half Dome most recently).
+                  These days, I play a lot of sand volleyball, explore local speakeasies, and 
+                  wander around national parks (attempted to hike Half Dome most recently).
                 </p>
               </div>
             </SectionContent>
@@ -108,7 +122,7 @@ export function Home() {
                 <TableRow
                   href={'https://github.com/ishan0102'}
                   title={'GitHub'}
-                  subtitle={'Follow'}
+                  subtitle={'Browse'}
                   date={''}
                 />
                 <TableRow
@@ -126,7 +140,7 @@ export function Home() {
                 <TableRow
                   href={'https://open.spotify.com/user/ishan0102?si=510c088c653249d2'}
                   title={'Spotify'}
-                  subtitle={'Follow'}
+                  subtitle={'Listen'}
                   date={''}
                 />
               </div>
@@ -139,17 +153,17 @@ export function Home() {
             <SectionContent>
               <Image
                 priority
-                src="/static/img/sf.png"
-                width={600}
+                src="/static/img/austin.png"
+                width={550}
                 height={300}
                 layout="responsive"
                 className="rounded-xl"
                 quality={100}
-                alt="Map of San Bruno with blue location dot in the middle"
+                alt="Map of Austin with blue location dot in the middle"
               />
               <p className="flex items-center justify-end pt-2 space-x-2 text-sm text-quaternary md:text-right">
                 <MapPin size={12} />
-                <span>San Bruno, CA</span>
+                <span>Austin, TX</span>
               </p>
             </SectionContent>
           </SectionContainer>

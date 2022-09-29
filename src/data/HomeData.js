@@ -1,9 +1,15 @@
 const workHistory = [
   {
+    href: 'https://www.unrealspeech.com',
+    title: 'Unreal Speech',
+    subtitle: 'Software Engineer',
+    date: 'Aug 2022-Present\u00a0',
+  },
+  {
     href: 'https://www.youtube.com/',
     title: 'Google',
     subtitle: 'Software Engineering Intern',
-    date: 'May 2022-Present\u00a0',
+    date: 'May 2022-Aug 2022',
   },
   {
     href: 'https://users.ece.utexas.edu/~vallathn/ee422c/',
@@ -45,7 +51,7 @@ const organizations = [
     href: 'https://rodenleadership.wixsite.com/roden',
     title: 'Roden Leadership Program',
     subtitle: 'Project Lead',
-    date: 'Feb 2019-Present\u00a0',
+    date: 'Feb 2019-May 2022',
   },
   {
     href: 'https://www.ieee.ece.utexas.edu/',
