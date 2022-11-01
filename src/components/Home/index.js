@@ -47,6 +47,16 @@ export function Home() {
   return (
     <Detail.Container>
       <Detail.ContentContainer>
+        {/* Avatar */}
+        <div className="flex justify-center dark:hidden -mt-8 md:ml-16">
+          <Image
+            src="/static/img/avatar.jpeg"
+            alt="Ishan"
+            width={250}
+            height={250}
+          />
+        </div>
+
         <div className="pb-24 md:pb-4 space-y-12 md:space-y-16">
           {/* Bio */}
           <SectionContainer>
