@@ -54,6 +54,7 @@ export function Home() {
             alt="Ishan"
             width={250}
             height={250}
+            quality={100}
           />
         </div>
 
