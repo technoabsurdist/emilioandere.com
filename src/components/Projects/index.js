@@ -11,7 +11,7 @@ function Project({ name, date, tools, tagline, description, tag, links }) {
           {name}
         </p>
         <div className="my-auto">
-          <p className={`h-5 w-5 ml-3 rounded-sm ${tag == "Personal" ? "bg-indigo-400" : tag == "School" ? "bg-green-400" : "bg-red-400"}`}>
+          <p className={`h-5 w-5 ml-3 rounded-sm ${tag == "Personal" ? "bg-sky-500" : tag == "School" ? "bg-violet-500" : tag == "Work" ? "bg-rose-500" : "bg-emerald-500"}`}>
           </p>
         </div>
       </div>
@@ -33,7 +33,7 @@ function Project({ name, date, tools, tagline, description, tag, links }) {
       </div>
 
       {/* Description */}
-      <p className="text-md text-gray-500 pb-4 dark:text-gray-400">
+      <p className="text-md text-gray-500 pb-4 dark:text-gray-500">
         {description}
       </p>
 
@@ -60,7 +60,8 @@ export function Projects() {
   const [filter, setFilter] = useState({
       "School": true,
       "Personal": true,
-      "Other": true,
+      "Work": true,
+      "Research": true,
     }
   )
 
@@ -78,23 +79,29 @@ export function Projects() {
         {/* Filtering */}
         <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
         <div className="justify-center flex pt-2">
+          <button 
+            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Work'] ? 'bg-rose-500 border-rose-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            onClick={() => handleFilter("Work")}
+          >
+            Work
+          </button>
           <button
-            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Personal'] ? 'bg-indigo-400 border-indigo-400 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['Research'] ? 'bg-emerald-500 border-emerald-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            onClick={() => handleFilter("Research")}
+          >
+            Research
+          </button>
+          <button
+            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Personal'] ? 'bg-sky-500 border-sky-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
             onClick={() => handleFilter("Personal")}
             >
             Personal
           </button>
           <button 
-            className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['School'] ? 'bg-green-500 border-green-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+            className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['School'] ? 'bg-violet-500 border-violet-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
             onClick={() => handleFilter("School")}
             >
             School
-          </button>
-          <button 
-            className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Other'] ? 'bg-red-400 border-red-400 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-            onClick={() => handleFilter("Other")}
-          >
-            Other
           </button>
         </div>
 

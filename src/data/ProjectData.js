@@ -1,4 +1,71 @@
 const projectsList = [
+// Add mahowald/HAI lab research projects
+//  {
+//     name: "Smart Exercise",
+//     date: "Fall 2021",
+//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
+//     tagline: "A smart exercise app",
+//     description: `
+//       Smart Exercise is a web app that uses computer vision to track your exercise form and
+//       provide real-time feedback. I built this with a team of 4 other students for our
+//       final project in CS 329E. I worked on the frontend, backend, and computer vision
+//       components of the project.
+//     `,
+//     tag: "School",
+//     links: {
+//       "Website": "https://smart-exercise.herokuapp.com/",
+//       "GitHub": "https://github.com"
+//     }
+//   },
+//   {
+//     name: "Audio Wiki",
+//     date: "Spring 2021",
+//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
+//     tagline: "A wiki for audio",
+//     description: `
+//       Audio Wiki is a web app that lets you search for audio clips by their content. I built
+//       this with a team of 4 other students for our final project in CS 329E. I worked on
+//       the frontend, backend, and audio processing components of the project.
+//     `,
+//     tag: "School",
+//     links: {
+//       "Website": "https://audio-wiki.herokuapp.com/",
+//       "GitHub": "https://github.com"
+//     }
+//   },
+//   {
+//     name: "Unreal Speech",
+//     date: "Summer 2021",
+//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
+//     tagline: "A text-to-speech startup",
+//     description: `
+//       Unreal Speech is a text-to-speech startup that I'm currently building. I'm working on
+//       a new voice engine that will be affordable, authentic, and easy to use. I'm also
+//       building a web app that will let you create your own voice engine.
+//     `,
+//     tag: "Work",
+//     links: {
+//       "Website": "https://unrealspeech.com/",
+//       "GitHub": "https://github.com"
+//     }
+//   },
+  {
+    name: "Real Analysis Textbook",
+    date: "Fall 2022",
+    tools: ["LaTeX"],
+    tagline: "A real analysis textbook",
+    description: `
+      I wanted to get really good at LaTeX, so I decided to take notes for Real Analysis (M 361K)
+      in the form of a typeset textbook. Writing this in realtime during lectures was really hard
+      at first, but after a few classes I noticed I was getting way faster. Having a 140 WPM typing
+      speed also helped quite a bit 😄.
+    `,
+    tag: "School",
+    links: {
+      "Textbook": "/static/pdf/real-analysis.pdf",
+      "GitHub": "https://github.com/ishan0102/m-361k"
+    }
+  },
   {
     name: "Ishan's Cafe",
     date: "Summer 2022",
@@ -81,7 +148,7 @@ const projectsList = [
         I experimented by feeding the model input like "The doctor was a..."
         and analyzing the probability distribution of the output (male, female, etc.).
       `,
-    tag: "School",
+    tag: "Research",
     links: {
       "Paper": "/static/pdf/gpt3.pdf",
     },
@@ -128,7 +195,7 @@ const projectsList = [
         This project taught me a lot about full-stack web development and how to interface
         with Firebase.
       `,
-    tag: "Personal",
+    tag: "Work",
     links: {
     },
   },
@@ -142,7 +209,7 @@ const projectsList = [
         given a data source. It's intended to improve viability of in-home dialysis.
         We built it for the DaVita Product Management Hackathon and won first place.
       `,
-    tag: "Other",
+    tag: "Personal",
     links: {
       "Website": "https://devpost.com/software/vitali",
       "GitHub": "https://github.com/ishan0102/vitali",
@@ -189,7 +256,7 @@ const projectsList = [
         unique. We decided to use GCP's NLP services to improve users' speaking
         skills by providing feedback on tone and speech style.
       `,
-    tag: "Other",
+    tag: "Personal",
     links: {
       "Website": "https://devpost.com/software/nlp-speech-analysis",
       "GitHub": "https://github.com/ishan0102/hacktx-20",
