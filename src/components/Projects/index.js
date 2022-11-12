@@ -33,7 +33,7 @@ function Project({ name, date, tools, tagline, description, tag, links }) {
       </div>
 
       {/* Description */}
-      <p className="text-md text-gray-500 pb-4 dark:text-gray-500">
+      <p className="text-md text-gray-600 pb-4 dark:text-gray-400">
         {description}
       </p>
 

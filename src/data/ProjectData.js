@@ -1,5 +1,5 @@
 const projectsList = [
-// Add mahowald/HAI lab research projects
+// TODO: Add mahowald/HAI lab research projects
 //  {
 //     name: "Smart Exercise",
 //     date: "Fall 2021",
@@ -17,38 +17,38 @@ const projectsList = [
 //       "GitHub": "https://github.com"
 //     }
 //   },
-//   {
-//     name: "Audio Wiki",
-//     date: "Spring 2021",
-//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
-//     tagline: "A wiki for audio",
-//     description: `
-//       Audio Wiki is a web app that lets you search for audio clips by their content. I built
-//       this with a team of 4 other students for our final project in CS 329E. I worked on
-//       the frontend, backend, and audio processing components of the project.
-//     `,
-//     tag: "School",
-//     links: {
-//       "Website": "https://audio-wiki.herokuapp.com/",
-//       "GitHub": "https://github.com"
-//     }
-//   },
-//   {
-//     name: "Unreal Speech",
-//     date: "Summer 2021",
-//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
-//     tagline: "A text-to-speech startup",
-//     description: `
-//       Unreal Speech is a text-to-speech startup that I'm currently building. I'm working on
-//       a new voice engine that will be affordable, authentic, and easy to use. I'm also
-//       building a web app that will let you create your own voice engine.
-//     `,
-//     tag: "Work",
-//     links: {
-//       "Website": "https://unrealspeech.com/",
-//       "GitHub": "https://github.com"
-//     }
-//   },
+  {
+    name: "Audio Wiki",
+    date: "Fall 2022",
+    tools: ["FastAPI", "Next.js", "BeautifulSoup", "Railway"],
+    tagline: "Listen to Wikipedia",
+    description: `
+      Audio Wiki is an Unreal Speech project that uses our in-house text-to-speech engine to
+      let you listen to Wikipedia articles. I built the entire backend for this project,
+      including the Wikipedia scraper and parser and our FastAPI server. We're working on more
+      apps that use our text-to-speech engine, so stay tuned!
+    `,
+    tag: "Work",
+    links: {
+      "Website": "https://dev.audio.wiki/",
+    }
+  },
+  {
+    name: "Unreal Speech",
+    date: "Fall 2022",
+    tools: ["PyTorch", "AWS S3", "AWS DynamoDB", "Firebase", "Railway"],
+    tagline: "A text-to-speech startup",
+    description: `
+      Unreal Speech is a text-to-speech startup that I'm currently building. So far,
+      I've worked on a model evaluation pipeline using Amazon Mechanical Turk,
+      rebuilt our landing page and demos, and migrated 500 users from Firebase to
+      AWS DynamoDB. The goal is cheaper and more realistic models than our competitors!
+    `,
+    tag: "Work",
+    links: {
+      "Website": "https://unrealspeech.com/",
+    }
+  },
   {
     name: "Real Analysis Textbook",
     date: "Fall 2022",
