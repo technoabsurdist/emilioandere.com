@@ -48,12 +48,21 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="flex justify-center dark:hidden -mt-8 md:ml-16">
+        <div className="justify-center flex dark:hidden mb-6 md:ml-20">
           <Image
             src="/static/img/avatar.png"
             alt="Ishan"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
+            quality={100}
+          />
+        </div>
+        <div className="justify-center hidden dark:flex mb-6 md:ml-20">
+          <Image
+            src="/static/img/ishan.png"
+            alt="Ishan"
+            width={200}
+            height={200}
             quality={100}
           />
         </div>
