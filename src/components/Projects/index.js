@@ -127,11 +127,11 @@ export function Projects() {
         </div>
 
         {/* Nav */}
-        <div class="fixed z-10 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-auto hidden 2xl:block">
-          <div class="px-8">
-            <ul class="text-slate-700 text-sm leading-6">
-              <li class="mb-4">
-                <a href="#" class="text-gray-900 dark:text-gray-100">Contents</a>
+        <div className="fixed z-10 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-auto hidden 2xl:block">
+          <div className="px-8">
+            <ul className="text-slate-700 text-sm leading-6">
+              <li className="mb-4">
+                <a href="#" className="text-gray-900 dark:text-gray-100">Contents</a>
               </li>
               {ProjectData.projectsList.map((project, index) => (
                 <li key={index} className="hover:text-indigo-500">
