@@ -15,7 +15,7 @@ export function Nav() {
     <nav className="flex items-center justify-between p-4 md:p-6 sticky top-0">
       <div className="flex items-center flex-shrink-0 ml-0 md:ml-4 mr-6">
         <Link href="/">
-          <a className="inline-block text-primary text-xl md:text-2xl font-semibold hover:text-indigo-500">
+          <a className="inline-block text-primary text-xl md:text-2xl font-semibold hover:text-indigo-500 font-grenette">
             Ishan Shah
           </a>
         </Link>

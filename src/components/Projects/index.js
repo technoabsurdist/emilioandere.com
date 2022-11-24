@@ -131,7 +131,7 @@ export function Projects() {
           <div className="px-8">
             <ul className="text-slate-700 text-sm leading-6">
               <li className="mb-4">
-                <a href="#" className="text-gray-900 dark:text-gray-100">Contents</a>
+                <a href="/projects" className="text-gray-900 dark:text-gray-100">Contents</a>
               </li>
               {ProjectData.projectsList.map((project, index) => (
                 <li key={index} className="hover:text-indigo-500">

@@ -16,7 +16,16 @@
     bottom: -50%;
     left: -50%;
     z-index: -1;
+    font-family: 'grenette_regular', 'dazzed_medium', sans-serif;
     @apply bg-off-white dark:bg-off-black;
+  }
+
+  /* Inflection Font */
+  @font-face {
+    font-family: 'grenette_regular';
+    src: url('../../public/static/fonts/grenette-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
 }
 
@@ -70,5 +79,9 @@
   .blink {
     animation: blink-animation 1.5s steps(2, start) infinite;
     -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
+  }
+
+  .font-grenette {
+    font-family: 'grenette_regular', 'dazzed_medium', sans-serif;
   }
 }

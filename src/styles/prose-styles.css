@@ -15,7 +15,7 @@
 }
 
 .prose a {
-  @apply font-normal text-indigo-600 no-underline break-words hover:underline dark:text-indigo-500;
+  @apply font-normal text-indigo-600 break-words no-underline hover:underline hover:underline-offset-2;
 }
 
 .prose a code {
