@@ -92,7 +92,7 @@ export function Home() {
                   </a>
                   . I&apos;m currently building{' '}
                   <a
-                    href="https://unrealspeech.com" 
+                    href="https://unrealspeech.up.railway.app/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

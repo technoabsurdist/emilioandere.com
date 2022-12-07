@@ -1,8 +1,8 @@
 const workHistory = [
   {
-    href: 'https://www.unrealspeech.com',
+    href: 'https://unrealspeech.up.railway.app/',
     title: 'Unreal Speech',
-    subtitle: 'Software Engineer',
+    subtitle: 'Founding Engineer',
     date: 'Aug 2022-Present\u00a0',
   },
   {
@@ -32,6 +32,12 @@ const workHistory = [
 ]
 
 const research = [
+  {
+    href: 'https://sites.utexas.edu/compling/',
+    title: 'UT Computational Linguistics',
+    subtitle: 'Research Assistant',
+    date: 'Aug 2022-Present\u00a0',
+  },
   {
     href: 'https://hai.ischool.utexas.edu/',
     title: 'Human-AI Interaction Lab',
