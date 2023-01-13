@@ -74,55 +74,24 @@ export function Home() {
             <SectionContent>
               <div className="prose">
                 <p>
-                  Hey, I&apos;m Ishan. I&apos;m a software engineer, student,{' '}
-                  <a 
-                    href="https://ishan.coffee" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    writer
-                  </a>
-                  , and{' '}
-                  <a 
-                    href="https://github.com/ishan0102" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    tinkerer
-                  </a>
-                  . I&apos;m currently building{' '}
-                  <a
-                    href="https://unrealspeech.up.railway.app/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    Unreal Speech
-                  </a>
-                  , a new text-to-speech startup focused on delivering affordable, authentic
-                  voice engines. I&apos;m also wrapping up a double major in computer engineering
-                  and math at UT Austin.
+                  Hi, I&apos;m Ishan! I love machine learning and <a href="https://github.com/ishan0102" target="_blank" rel="noopener noreferrer">
+                  tinkering</a>. I&apos;m currently building <a href="https://minion.ai/" target="_blank" 
+                  rel="noopener noreferrer">Minion AI</a> led by <a href="https://minion.ai/" target="_blank" 
+                  rel="noopener noreferrer">Alex Graveley</a> and advised by  <a href="https://nat.org/" 
+                  target="_blank" rel="noopener noreferrer">Nat Friedman</a>. I also study computer engineering
+                  and math at UT Austin and research large language models with <a href="https://mahowak.github.io/" 
+                  target="_blank" rel="noopener noreferrer">Kyle Mahowald</a>.
                 </p>
                 <p>
-                  I interned at YouTube this past summer and worked on making ML classification
-                  infrastructure more reliable. Before that, I developed a natural language processing 
-                  pipeline at Capital One to detect fraud in car dealerships using customer reviews.
+                  I&apos;ve worked on machine learning infrastructure as a founding engineer at <a 
+                  href="https://unrealspeech.com/" target="_blank" rel="noopener noreferrer">Unreal Speech</a>{' '}
+                  and through internships at YouTube and Capital One. Through college, I&apos;ve taught a couple
+                  hundred students, interviewed people for my school newspaper, and trained a model to play
+                  pictionary.
                 </p>
                 <p>
-                  I&apos;ve also{' '}
-                  <a 
-                    href="https://hai.ischool.utexas.edu/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    researched responsible AI
-                  </a>
-                  {' '}to tackle Austin homelessness, built a tool to summarize emails, and 
-                  taught a couple hundred students through a combination of teaching classes
-                  and tutoring.
-                </p>
-                <p>
-                  These days, I play a lot of sand volleyball, explore local speakeasies, and 
-                  wander around national parks (attempted to hike Half Dome most recently).
+                  This semester, I&apos;m getting good at golf and volleyball (shoutout UT PE classes!), 
+                  trying every speakeasy in Austin, and learning how to cook things besides pasta.
                 </p>
               </div>
             </SectionContent>
@@ -142,7 +111,7 @@ export function Home() {
                 <TableRow
                   href={'https://github.com/ishan0102'}
                   title={'GitHub'}
-                  subtitle={'Browse'}
+                  subtitle={'Follow'}
                   date={''}
                 />
                 <TableRow
@@ -160,7 +129,7 @@ export function Home() {
                 <TableRow
                   href={'https://open.spotify.com/user/ishan0102?si=510c088c653249d2'}
                   title={'Spotify'}
-                  subtitle={'Listen'}
+                  subtitle={'Follow'}
                   date={''}
                 />
               </div>
