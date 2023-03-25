@@ -57,15 +57,6 @@ export function Home() {
             quality={100}
           />
         </div>
-        <div className="justify-center hidden dark:flex mb-6 md:ml-20">
-          <Image
-            src="/static/img/ishan.png"
-            alt="Ishan"
-            width={200}
-            height={200}
-            quality={100}
-          />
-        </div>
 
         <div className="pb-24 md:pb-4 space-y-12 md:space-y-16">
           {/* Bio */}
@@ -74,24 +65,15 @@ export function Home() {
             <SectionContent>
               <div className="prose">
                 <p>
-                  Hi, I&apos;m Ishan! I love machine learning and <a href="https://github.com/ishan0102" target="_blank" rel="noopener noreferrer">
-                  tinkering</a>. I&apos;m currently building <a href="https://minion.ai/" target="_blank" 
-                  rel="noopener noreferrer">Minion AI</a> led by <a href="https://minion.ai/" target="_blank" 
-                  rel="noopener noreferrer">Alex Graveley</a> and advised by  <a href="https://nat.org/" 
-                  target="_blank" rel="noopener noreferrer">Nat Friedman</a>. I also study computer engineering
-                  and math at UT Austin and research large language models with <a href="https://mahowak.github.io/" 
-                  target="_blank" rel="noopener noreferrer">Kyle Mahowald</a>.
-                </p>
-                <p>
-                  I&apos;ve worked on machine learning infrastructure as a founding engineer at <a 
-                  href="https://unrealspeech.com/" target="_blank" rel="noopener noreferrer">Unreal Speech</a>{' '}
-                  and through internships at YouTube and Capital One. Through college, I&apos;ve taught a couple
-                  hundred students, interviewed people for my school newspaper, and trained a model to play
-                  pictionary.
-                </p>
-                <p>
-                  This semester, I&apos;m getting good at golf and volleyball (shoutout UT PE classes!), 
-                  trying every speakeasy in Austin, and learning how to cook things besides pasta.
+                I'm currently researching large language models with Kyle Mahowald.
+
+                In the past, I've worked on:
+                <ul>
+                  <li>LLMs for web browsing at <a>Minion AI</a></li>
+                  <li>Text-to-speech model evaluation at <a>Unreal Speech</a></li>
+                  <li>Configurable throttling for video classifications at <a>YouTube</a></li>
+                  <li>Fraud detection from customer reviews at <a>Capital One</a></li>
+                </ul>
                 </p>
               </div>
             </SectionContent>
@@ -115,20 +97,8 @@ export function Home() {
                   date={''}
                 />
                 <TableRow
-                  href={'https://www.linkedin.com/in/ishan0102/'}
-                  title={'LinkedIn'}
-                  subtitle={'Connect'}
-                  date={''}
-                />
-                <TableRow
                   href={'https://twitter.com/ishan0102'}
                   title={'Twitter'}
-                  subtitle={'Follow'}
-                  date={''}
-                />
-                <TableRow
-                  href={'https://open.spotify.com/user/ishan0102?si=510c088c653249d2'}
-                  title={'Spotify'}
                   subtitle={'Follow'}
                   date={''}
                 />
