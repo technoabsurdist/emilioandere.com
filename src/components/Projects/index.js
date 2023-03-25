@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ProjectData } from '../../data/ProjectData'
+import ChromeDinoGame from 'react-chrome-dino';
 
 function Project({ name, date, tools, tagline, description, tag, links }) {
   return (
@@ -74,24 +75,15 @@ export function Projects() {
     "Personal": true,
     "Work": true,
     "Research": true,
-  }
-  )
+  })
 
   const handleFilter = (filterKey) => {
-    // Check if the clicked filter is the only active filter
-    const isOnlyActiveFilter = Object.keys(filter).filter((key) => filter[key]).length === 1 && filter[filterKey];
-  
-    // If the clicked filter is the only active filter, do not change its state
-    if (isOnlyActiveFilter) {
-      return;
-    }
-  
     // Toggle the state of the clicked filter
     setFilter((prevState) => ({
       ...prevState,
       [filterKey]: !prevState[filterKey],
     }));
-  };  
+  };
 
   const filters = [
     { key: 'Work', color: 'rose' },
@@ -100,9 +92,11 @@ export function Projects() {
     { key: 'School', color: 'violet' },
   ];
 
+  const isNothingSelected = Object.values(filter).every((value) => !value);
+
   return (
     <div>
-      <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scroll-smooth">
+      <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scrollbar-hide scroll-smooth">
         <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
           {/* Filtering */}
           <div className="flex justify-center mt-4">
@@ -112,7 +106,7 @@ export function Projects() {
                 {filters.map(filterItem => (
                   <button
                     key={filterItem.key}
-                    className={`p-2 sm:px-4 sm:py-2 mx-2 text-sm font-medium rounded ${filter[filterItem.key] ? `bg-${filterItem.color}-500 border-${filterItem.color}-500 text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2 transition duration-300 ease-in-out transform hover:scale-105`}
+                    className={`p-2 sm:px-4 sm:py-2 mx-2 text-sm font-medium rounded border-2 ${filter[filterItem.key] ? `bg-${filterItem.color}-500 border-transparent text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'}`}
                     onClick={() => handleFilter(filterItem.key)}
                   >
                     {filterItem.key}
@@ -122,28 +116,37 @@ export function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
-            {ProjectData.projectsList.map((project, index) => {
-              if (filter[project.tag]) {
-                return <Project
-                  key={index}
-                  name={project.name}
-                  date={project.date}
-                  tools={project.tools}
-                  tagline={project.tagline}
-                  description={project.description}
-                  tag={project.tag}
-                  website={project.website}
-                  github={project.github}
-                  links={project.links}
-                />
-              }
-            })}
+          {/* Projects */}
+          <div className="mt-6">
+            {isNothingSelected ? (
+              <div className="">
+                <ChromeDinoGame />
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
+                {ProjectData.projectsList.map((project, index) => {
+                  if (filter[project.tag]) {
+                    return <Project
+                      key={index}
+                      name={project.name}
+                      date={project.date}
+                      tools={project.tools}
+                      tagline={project.tagline}
+                      description={project.description}
+                      tag={project.tag}
+                      website={project.website}
+                      github={project.github}
+                      links={project.links}
+                    />
+                  }
+                })}
+              </div>
+            )}
           </div>
         </div>
 
         {/* Nav */}
-        {/* <div className="fixed z-5 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-scroll hidden 2xl:block">
+        {/* <div className="fixed z-5 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-scroll scrollbar-hide hidden 2xl:block">
           <div className="px-8">
             <ul className="text-slate-700 text-sm leading-6">
               <li className="mb-4 text-gray-900 dark:text-gray-100">
