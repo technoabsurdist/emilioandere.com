@@ -6,7 +6,7 @@ const Container = React.forwardRef(
       <div
         ref={ref}
         id="main"
-        className="relative flex max-h-screen w-full flex-col overflow-y-auto"
+        className="relative flex max-h-screen w-full flex-col overflow-y-scroll"
         {...props}
       />
     )

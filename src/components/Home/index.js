@@ -72,7 +72,7 @@ export function Home() {
                   <li>LLMs for web browsing at <a>Minion AI</a></li>
                   <li>Text-to-speech model evaluation at <a>Unreal Speech</a></li>
                   <li>Configurable throttling for video classifications at <a>YouTube</a></li>
-                  <li>Fraud detection from customer reviews at <a>Capital One</a></li>
+                  <li>Fraud detection using customer reviews at <a>Capital One</a></li>
                 </ul>
                 </p>
               </div>

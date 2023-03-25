@@ -56,6 +56,18 @@ function Project({ name, date, tools, tagline, description, tag, links }) {
   )
 }
 
+function generateButton(key, label, color) {
+  return (
+    <button
+      key={key}
+      className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter[key] ? `bg-${color}-500 border-${color}-500 text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+      onClick={() => handleFilter(key)}
+    >
+      {label}
+    </button>
+  );
+}
+
 export function Projects() {
   const [filter, setFilter] = useState({
     "School": true,
@@ -72,38 +84,29 @@ export function Projects() {
     }))
   }
 
+  const filters = [
+    { key: 'Work', color: 'rose' },
+    { key: 'Research', color: 'emerald' },
+    { key: 'Personal', color: 'sky' },
+    { key: 'School', color: 'violet' },
+  ];
 
   return (
     <div>
-      <div className="relative flex max-h-screen w-full flex-col overflow-y-auto scroll-smooth">
+      <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scroll-smooth">
         <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
           {/* Filtering */}
-          <p className="flex justify-center pt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
+          <p className="flex justify-center mt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
           <div className="justify-center flex pt-2">
-            <button
-              className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Work'] ? 'bg-rose-500 border-rose-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-              onClick={() => handleFilter("Work")}
-            >
-              Work
-            </button>
-            <button
-              className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['Research'] ? 'bg-emerald-500 border-emerald-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-              onClick={() => handleFilter("Research")}
-            >
-              Research
-            </button>
-            <button
-              className={`p-2 sm:px-4 sm:py-2 text-sm font-medium rounded ${filter['Personal'] ? 'bg-sky-500 border-sky-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-              onClick={() => handleFilter("Personal")}
-            >
-              Personal
-            </button>
-            <button
-              className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter['School'] ? 'bg-violet-500 border-violet-500 text-gray-100' : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-              onClick={() => handleFilter("School")}
-            >
-              School
-            </button>
+            {filters.map(filterItem => (
+              <button
+                key={filterItem.key}
+                className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter[filterItem.key] ? `bg-${filterItem.color}-500 border-${filterItem.color}-500 text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
+                onClick={() => handleFilter(filterItem.key)}
+              >
+                {filterItem.key}
+              </button>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
@@ -127,7 +130,7 @@ export function Projects() {
         </div>
 
         {/* Nav */}
-        {/* <div className="fixed z-10 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-auto hidden 2xl:block">
+        {/* <div className="fixed z-5 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-scroll hidden 2xl:block">
           <div className="px-8">
             <ul className="text-slate-700 text-sm leading-6">
               <li className="mb-4 text-gray-900 dark:text-gray-100">
@@ -136,7 +139,7 @@ export function Projects() {
               {ProjectData.projectsList.map((project, index) => (
                 <li key={index} className="hover:text-indigo-500">
                   <Link href={`#${project.name.replaceAll(" ", "-")}`}>
-                    <a className="block py-1 font-medium text-primary hover:text-indigo-500">
+                    <a className="py-1 font-medium text-primary hover:text-indigo-500">
                       {project.name}
                     </a>
                   </Link>
