@@ -46,7 +46,6 @@ const projectsList = [
     `,
     tag: "Work",
     links: {
-      "Website": "https://unrealspeech.up.railway.app/",
     }
   },
   {
@@ -80,7 +79,7 @@ const projectsList = [
     tag: "Personal",
     links: {
       "Website": "https://ishan.coffee",
-      "GitHub": "https://github.com/ishan0102/thoughts",
+      "GitHub": "https://github.com/ishan0102/ishan.coffee",
     },
   },
   {
@@ -132,7 +131,6 @@ const projectsList = [
       `,
     tag: "School",
     links: {
-      "Website": "https://twittercommentary.netlify.app",
       "GitHub": "https://github.com/ishan0102/commentary",
       "Poster": "/static/pdf/commentary.pdf",
     },
@@ -242,7 +240,6 @@ const projectsList = [
       `,
     tag: "Personal",
     links: {
-      "Website": "http://dayinreview.org/",
       "GitHub": "https://github.com/DayInReview/day-in-review",
     },
   },
