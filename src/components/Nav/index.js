@@ -12,7 +12,7 @@ export function Nav() {
   }
 
   return (
-    <nav className="flex items-center justify-between p-4 md:p-6 border-b border-gray-200 filter-blur sticky top-0 z-10">
+    <nav className="flex items-center justify-between p-4 md:p-6 border-b border-gray-200 dark:border-none filter-blur sticky top-0 z-10">
       <div className="flex items-center flex-shrink-0 ml-0 md:ml-4 mr-6">
         <Link href="/">
           <a className="inline-block text-primary text-xl md:text-2xl font-semibold hover:text-indigo-500 font-grenette">

@@ -48,7 +48,7 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="justify-center flex dark:hidden mb-6 md:ml-20">
+        <div className="justify-center flex mb-6 md:ml-20 dark:hidden">
           <Image
             src="/static/img/avatar.png"
             alt="Ishan"
@@ -58,14 +58,14 @@ export function Home() {
           />
         </div>
 
-        <div className="pb-24 md:pb-4 space-y-12 md:space-y-16">
+        <div className="pb-24 md:pb-4 space-y-12 md:space-y-16 dark:mt-8">
           {/* Bio */}
           <SectionContainer>
             <SectionTitle />
             <SectionContent>
-              <div className="prose">
+              <div className="prose -mb-8">
                 <p>
-                I'm currently researching large language models with Kyle Mahowald.
+                Hey, I'm Ishan! I'm currently researching large language models with Kyle Mahowald.
 
                 In the past, I've worked on:
                 <ul>

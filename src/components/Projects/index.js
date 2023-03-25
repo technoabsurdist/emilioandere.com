@@ -96,18 +96,23 @@ export function Projects() {
       <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scroll-smooth">
         <div className="mx-auto w-full max-w-7xl px-4 pb-52 md:px-8">
           {/* Filtering */}
-          <p className="flex justify-center mt-2 sm:pt-0 pb-1 text-xl font-medium dark:text-gray-200">Filters</p>
-          <div className="justify-center flex pt-2">
-            {filters.map(filterItem => (
-              <button
-                key={filterItem.key}
-                className={`p-2 sm:px-4 sm:py-2 mx-6 text-sm font-medium rounded ${filter[filterItem.key] ? `bg-${filterItem.color}-500 border-${filterItem.color}-500 text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2`}
-                onClick={() => handleFilter(filterItem.key)}
-              >
-                {filterItem.key}
-              </button>
-            ))}
+          <div className="flex justify-center mt-4">
+            <div className="bg-neutral-50 dark:bg-off-black border border-gray-200 dark:border-none rounded-2xl shadow-xl p-4">
+              <p className="text-xl font-medium text-center dark:text-gray-200 mb-2">Filters</p>
+              <div className="flex justify-center pt-2">
+                {filters.map(filterItem => (
+                  <button
+                    key={filterItem.key}
+                    className={`p-2 sm:px-4 sm:py-2 mx-2 text-sm font-medium rounded ${filter[filterItem.key] ? `bg-${filterItem.color}-500 border-${filterItem.color}-500 text-gray-100` : 'bg-inherit bg-off-white border border-off-black dark:border-off-white text-off-black dark:text-off-white'} focus:outline-none border-2 transition duration-300 ease-in-out transform hover:scale-105`}
+                    onClick={() => handleFilter(filterItem.key)}
+                  >
+                    {filterItem.key}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
+
 
           <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
             {ProjectData.projectsList.map((project, index) => {
