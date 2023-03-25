@@ -77,12 +77,21 @@ export function Projects() {
   }
   )
 
-  const handleFilter = (tag) => {
-    setFilter(prevState => ({
+  const handleFilter = (filterKey) => {
+    // Check if the clicked filter is the only active filter
+    const isOnlyActiveFilter = Object.keys(filter).filter((key) => filter[key]).length === 1 && filter[filterKey];
+  
+    // If the clicked filter is the only active filter, do not change its state
+    if (isOnlyActiveFilter) {
+      return;
+    }
+  
+    // Toggle the state of the clicked filter
+    setFilter((prevState) => ({
       ...prevState,
-      [tag]: !prevState[tag]
-    }))
-  }
+      [filterKey]: !prevState[filterKey],
+    }));
+  };  
 
   const filters = [
     { key: 'Work', color: 'rose' },
@@ -112,7 +121,6 @@ export function Projects() {
               </div>
             </div>
           </div>
-
 
           <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
             {ProjectData.projectsList.map((project, index) => {
