@@ -66,15 +66,14 @@ export function Home() {
               <div className="prose -mb-8">
                 <p>
                 Hey, I'm Ishan! I'm currently researching large language models with Kyle Mahowald.
-
                 In the past, I've worked on:
+                </p>
                 <ul>
                   <li>LLMs for web browsing at <a>Minion AI</a></li>
                   <li>Text-to-speech model evaluation at <a>Unreal Speech</a></li>
                   <li>Configurable throttling for video classifications at <a>YouTube</a></li>
                   <li>Fraud detection using customer reviews at <a>Capital One</a></li>
                 </ul>
-                </p>
               </div>
             </SectionContent>
           </SectionContainer>

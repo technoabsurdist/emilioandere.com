@@ -113,6 +113,7 @@ export function Projects() {
                   </button>
                 ))}
               </div>
+              <p className="text-xs text-center text-gray-400 dark:text-gray-500 mt-4">Try deselecting all filters!</p>
             </div>
           </div>
 
