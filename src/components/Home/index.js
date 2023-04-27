@@ -127,7 +127,7 @@ export function Home() {
           </SectionContainer>
 
           {/* Work */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Work</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
@@ -142,10 +142,10 @@ export function Home() {
                 ))}
               </div>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
 
           {/* Research */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Research</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
@@ -160,10 +160,10 @@ export function Home() {
                 ))}
               </div>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
 
           {/* Organizations */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Organizations</SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
@@ -178,7 +178,7 @@ export function Home() {
                 ))}
               </div>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
 
           {/* Spotify Widget */}
           <SectionContainer>
