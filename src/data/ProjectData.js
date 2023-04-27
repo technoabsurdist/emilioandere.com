@@ -1,22 +1,53 @@
 const projectsList = [
-// TODO: Add mahowald/HAI lab research projects
-//  {
-//     name: "Smart Exercise",
-//     date: "Fall 2021",
-//     tools: ["Python", "PyTorch", "React", "Node.js", "MongoDB"],
-//     tagline: "A smart exercise app",
-//     description: `
-//       Smart Exercise is a web app that uses computer vision to track your exercise form and
-//       provide real-time feedback. I built this with a team of 4 other students for our
-//       final project in CS 329E. I worked on the frontend, backend, and computer vision
-//       components of the project.
-//     `,
-//     tag: "School",
-//     links: {
-//       "Website": "https://smart-exercise.herokuapp.com/",
-//       "GitHub": "https://github.com"
-//     }
-//   },
+  {
+    name: "Re:Form",
+    date: "Spring 2023",
+    tools: ["PoseNet", "Swift", "Velostat"],
+    tagline: "A smart exercise app",
+    description: `
+    We built Re:Form, a personal trainer that uses PoseNet for form correction, gyroscopes to 
+    analyze movement imbalances, and a pressure pad to measure weight distribution during a lift. 
+    This is our capstone project for ECE at UT Austin.
+    `,
+    tag: "School",
+    links: {
+      "YouTube": "https://www.youtube.com/watch?v=ir3zXi55mm4",
+      "Poster": "/static/pdf/reform.pdf",
+    }
+  },
+  {
+    name: "Do LLMs Know Grammar?",
+    date: "Spring 2023",
+    tools: ["PyTorch", "Hugging Face", "CUDA"],
+    tagline: "Probing LLMs for syntactic knowledge",
+    description: `
+      This study investigates whether large language models use internal representations of grammatical
+      subjecthood and objecthood to solve downstream NLP tasks. I benchmarked a RoBERTa model with and
+      without a syntactic representation on a variety of tasks on a cluster of 4 Nvidia A40 GPUs.
+    `,
+    tag: "Research",
+    links: {
+      "Paper": "/static/pdf/llm-grammar.pdf",
+      "Poster": "/static/pdf/llm-grammar-poster.pdf",
+    }
+  },
+  {
+    name: "rsrch",
+    date: "Spring 2023",
+    tools: ["Python", "PyPI", "arxiv.py", "Notion"],
+    tagline: "A Python package to manage arXiv papers",
+    description: `
+      rsrch is a Python package that lets you manage your arXiv papers directly from Python.
+      It's built on top of arxiv.py, a Python wrapper for the arXiv API. I built this package
+      to make it easier to manage my research papers on Notion and have extended it to work
+      via a Discord bot.
+    `,
+    tag: "Personal",
+    links: {
+      "GitHub": "https://github.com/ishan0102/rsrch",
+      "PyPI": "https://pypi.org/project/rsrch/",
+    }
+  },
   {
     name: "Audio Wiki",
     date: "Fall 2022",
@@ -33,69 +64,20 @@ const projectsList = [
     }
   },
   {
-    name: "Unreal Speech",
-    date: "Fall 2022",
-    tools: ["PyTorch", "AWS S3", "AWS DynamoDB", "Firebase", "Railway"],
-    tagline: "A text-to-speech startup",
-    description: `
-      Unreal Speech is a text-to-speech startup that I'm currently building. So far,
-      I've worked on a model evaluation pipeline using Amazon Mechanical Turk,
-      rebuilt our landing page and demos, and migrated 500 users from Firebase to
-      AWS DynamoDB. The goal is cheaper and more realistic models than our competitors!
-    `,
-    tag: "Work",
-    links: {
-    }
-  },
-  {
     name: "Real Analysis Textbook",
     date: "Fall 2022",
     tools: ["LaTeX"],
     tagline: "A real analysis textbook",
     description: `
-      I wanted to get really good at LaTeX, so I decided to take notes for Real Analysis (M 361K)
-      in the form of a typeset textbook. Writing this in realtime during lectures was really hard
-      at first, but after a few classes I noticed I was getting way faster. Having a 140 WPM typing
-      speed also helped quite a bit 😄.
+      I decided to take notes for Real Analysis (M 361K) in the form of a typeset textbook. 
+      Writing this in real time during lectures was really hard at first, but after a few 
+      classes I noticed I was getting way faster. Having a 140 WPM typing speed also helped quite a bit 😄.
     `,
     tag: "School",
     links: {
       "Textbook": "/static/pdf/real-analysis.pdf",
       "GitHub": "https://github.com/ishan0102/m-361k"
     }
-  },
-  {
-    name: "Ishan's Cafe",
-    date: "Summer 2022",
-    tools: ["Hugo", "Quartz"],
-    tagline: "Home to my thoughts",
-    description: `
-        I built Ishan's Cafe using Quartz, a template developed by Jacky Zhao. The site supports
-        "Control + K" for quick search, Markdown for individual posts, and an interactive knowledge
-        graph that lets you see how notes are connected. I love the setup because it's designed
-        to make the writing experience as flexible, yet effortless as possible.
-      `,
-    tag: "Personal",
-    links: {
-      "Website": "https://ishan.coffee",
-      "GitHub": "https://github.com/ishan0102/ishan.coffee",
-    },
-  },
-  {
-    name: "Personal Website",
-    date: "Summer 2022",
-    tools: ["Next.js", "Tailwind CSS", "Netlify"],
-    tagline: "What you're looking at",
-    description: `
-        This website is written in Next.js with reusable components styled with Tailwind CSS.
-        Originally, I wrote my personal website in pure HTML but decided to redesign it now
-        that I have more web dev experience.
-      `,
-    tag: "Personal",
-    links: {
-      "Website": "/",
-      "GitHub": "https://github.com/ishan0102/ishanshah.me",
-    },
   },
   {
     name: "Pictionary",
@@ -120,7 +102,7 @@ const projectsList = [
     name: "Commentary",
     date: "Spring 2022",
     tools: ["Python", "NLTK", "Scikit-learn", "XGBoost", "Twitter API", "FastAPI"],
-    tagline: "Critique on OpenAI's latest model",
+    tagline: "Predicting the sentiment of a tweet's replies",
     description: `
         For my final project in Data Science Principles (EE 461P), I trained a model to
         predict what the sentiment of a tweet's replies would look like given a tweet.
@@ -151,7 +133,7 @@ const projectsList = [
     },
   },
   {
-    name: "Pintos",
+    name: "PintOS",
     date: "Fall 2021",
     tools: ["C", "Makefile", "Operating Systems"],
     tagline: "An operating system built from scratch",
@@ -197,22 +179,6 @@ const projectsList = [
     },
   },
   {
-    name: "Vitali",
-    date: "Spring 2021",
-    tools: ["React", "Material UI"],
-    tagline: "Visualize patient data",
-    description: `
-        This is a React app that allows doctors to see a patient's data in real-time
-        given a data source. It's intended to improve viability of in-home dialysis.
-        We built it for the DaVita Product Management Hackathon and won first place.
-      `,
-    tag: "Personal",
-    links: {
-      "Website": "https://devpost.com/software/vitali",
-      "GitHub": "https://github.com/ishan0102/vitali",
-    },
-  },
-  {
     name: "Longhorn Computing Services",
     date: "Spring 2021",
     tools: ["Flask", "React"],
@@ -243,10 +209,10 @@ const projectsList = [
     },
   },
   {
-    name: "HackTX 2020",
+    name: "Speech Analysis with NLP",
     date: "Fall 2020",
     tools: ["Google Cloud", "NLP", "Node.js", "React"],
-    tagline: "Speech analysis with NLP",
+    tagline: "Hack Texas 2020 submission",
     description: `
         HackTX 2020 challenged us to use Google Cloud Platform to create something
         unique. We decided to use GCP's NLP services to improve users' speaking
