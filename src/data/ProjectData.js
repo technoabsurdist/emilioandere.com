@@ -1,23 +1,39 @@
 const projectsList = [
   {
-    name: "Re:Form",
-    date: "Spring 2023",
-    tools: ["PoseNet", "Swift", "Velostat"],
-    tagline: "A smart exercise app",
+    name: "Hermes Mail",
+    date: "May 2023",
+    tools: ["Python", "PyPI"],
+    tagline: "Email alerts for Python scripts",
     description: `
-    We built Re:Form, a personal trainer that uses PoseNet for form correction, gyroscopes to 
-    analyze movement imbalances, and a pressure pad to measure weight distribution during a lift. 
-    This is our capstone project for ECE at UT Austin.
+      Hermes Mail is a Python package that lets you get an email when your Python jobs are done
+      instead of having to check your terminal.
     `,
-    tag: "School",
+    tag: "Personal",
     links: {
-      "YouTube": "https://www.youtube.com/watch?v=ir3zXi55mm4",
-      "Poster": "/static/pdf/reform.pdf",
+      "GitHub": "https://github.com/ishan0102/hermes-mail",
+      "PyPI": "https://pypi.org/project/hermes-mail/",
+    }
+  },
+  {
+    name: "Countdowns",
+    date: "May 2023",
+    tools: ["Next.js", "Vercel"],
+    tagline: "Beautiful countdown timers",
+    description: `
+      Countdowns is a simple web app that lets you build your own countdowns and share them with
+      your friends. I implemented a shareable link system, multiple high-res backgrounds, and
+      support for all timezones. In one week I reached 2k+ users, 70 countries, and 650+ countdowns
+      created for everything from NBA games to baby due dates.
+    `,
+    tag: "Personal",
+    links: {
+      "Website": "https://countdowns.live",
+      "GitHub": "https://github.com/ishan0102/countdowns",
     }
   },
   {
     name: "Do LLMs Know Grammar?",
-    date: "Spring 2023",
+    date: "October 2022 - May 2023",
     tools: ["PyTorch", "Hugging Face", "CUDA"],
     tagline: "Probing LLMs for syntactic knowledge",
     description: `
@@ -32,8 +48,24 @@ const projectsList = [
     }
   },
   {
+    name: "Re:Form",
+    date: "August 2022 - April 2023",
+    tools: ["PoseNet", "Swift", "Velostat"],
+    tagline: "A smart exercise app",
+    description: `
+    We built Re:Form, a personal trainer that uses PoseNet for form correction, gyroscopes to 
+    analyze movement imbalances, and a pressure pad to measure weight distribution during a lift. 
+    This is our capstone project for ECE at UT Austin.
+    `,
+    tag: "School",
+    links: {
+      "YouTube": "https://www.youtube.com/watch?v=ir3zXi55mm4",
+      "Poster": "/static/pdf/reform.pdf",
+    }
+  },
+  {
     name: "rsrch",
-    date: "Spring 2023",
+    date: "January 2023 - April 2023",
     tools: ["Python", "PyPI", "arxiv.py", "Notion"],
     tagline: "A Python package to manage arXiv papers",
     description: `
@@ -49,8 +81,24 @@ const projectsList = [
     }
   },
   {
+    name: "Video QA",
+    date: "March 2023",
+    tools: ["Sieve Data", "GPT-4", "CLIP", "Pinecone", "ViT-GPT2"],
+    tagline: "Ask questions about videos",
+    description: `
+      This is a video question answering pipeline built on the Sieve Data platform that takes
+      an input video and a question and returns an answer while citing the frames that were
+      used to generate the answer. Video frames and queries are embedded using CLIP and stored
+      in Pinecone, and ViT-GPT2 captions are passed to GPT-4 to generate answers in natural language.
+    `,
+    tag: "Work",
+    links: {
+      "GitHub": "https://github.com/ishan0102/m-361k"
+    }
+  },
+  {
     name: "Audio Wiki",
-    date: "Fall 2022",
+    date: "October 2022 - December 2022",
     tools: ["FastAPI", "Next.js", "BeautifulSoup", "Railway"],
     tagline: "Listen to Wikipedia",
     description: `
@@ -65,7 +113,7 @@ const projectsList = [
   },
   {
     name: "Real Analysis Textbook",
-    date: "Fall 2022",
+    date: "August 2022 - December 2022",
     tools: ["LaTeX"],
     tagline: "A real analysis textbook",
     description: `
@@ -76,12 +124,12 @@ const projectsList = [
     tag: "School",
     links: {
       "Textbook": "/static/pdf/real-analysis.pdf",
-      "GitHub": "https://github.com/ishan0102/m-361k"
+      "GitHub": "https://github.com/ishan0102/real-analysis",
     }
   },
   {
     name: "Pictionary",
-    date: "Spring 2022",
+    date: "March 2022 - May 2022",
     tools: ["TensorFlow", "GANs", "Computer Vision"],
     tagline: "Play Pictionary against a computer",
     description: `
@@ -100,7 +148,7 @@ const projectsList = [
   },
   {
     name: "Commentary",
-    date: "Spring 2022",
+    date: "April 2022 - May 2022",
     tools: ["Python", "NLTK", "Scikit-learn", "XGBoost", "Twitter API", "FastAPI"],
     tagline: "Predicting the sentiment of a tweet's replies",
     description: `
@@ -118,7 +166,7 @@ const projectsList = [
   },
   {
     name: "Exploring Bias in GPT-3",
-    date: "Fall 2021",
+    date: "December 2021",
     tools: ["GPT-3", "NLP"],
     tagline: "Critique on OpenAI's latest model",
     description: `
@@ -134,7 +182,7 @@ const projectsList = [
   },
   {
     name: "PintOS",
-    date: "Fall 2021",
+    date: "August 2021 - November 2021",
     tools: ["C", "Makefile", "Operating Systems"],
     tagline: "An operating system built from scratch",
     description: `
@@ -150,7 +198,7 @@ const projectsList = [
   },
   {
     name: "Yash",
-    date: "Fall 2021",
+    date: "August 2021",
     tools: ["C", "Operating Systems"],
     tagline: "Yet Another Shell",
     description: `
@@ -165,9 +213,9 @@ const projectsList = [
   },
   {
     name: "PeerNet",
-    date: "Spring 2021",
+    date: "February 2021 - May 2021",
     tools: ["React", "Node.js", "Firebase", "Twilio", "Material UI", "Sass"],
-    tagline: "Peer-to-peer tutoring for universities",
+    tagline: "Peer-to-peer tutoring",
     description: `
         PeerNet is a tutoring initiative I co-led for the Roden Leadership Program.
         The platform allows university students to give and receive class-specific help.
@@ -180,7 +228,7 @@ const projectsList = [
   },
   {
     name: "Longhorn Computing Services",
-    date: "Spring 2021",
+    date: "January 2021 - May 2021",
     tools: ["Flask", "React"],
     tagline: "Cloud computing manager",
     description: `
@@ -195,7 +243,7 @@ const projectsList = [
   },
   {
     name: "Day in Review",
-    date: "Fall 2020",
+    date: "July 2020 - August 2020",
     tools: ["Scikit-learn", "NLP", "Electron JS", "Node.js", "React"],
     tagline: "Email summarizer",
     description: `
@@ -209,24 +257,8 @@ const projectsList = [
     },
   },
   {
-    name: "Speech Analysis with NLP",
-    date: "Fall 2020",
-    tools: ["Google Cloud", "NLP", "Node.js", "React"],
-    tagline: "Hack Texas 2020 submission",
-    description: `
-        HackTX 2020 challenged us to use Google Cloud Platform to create something
-        unique. We decided to use GCP's NLP services to improve users' speaking
-        skills by providing feedback on tone and speech style.
-      `,
-    tag: "Personal",
-    links: {
-      "Website": "https://devpost.com/software/nlp-speech-analysis",
-      "GitHub": "https://github.com/ishan0102/hacktx-20",
-    },
-  },
-  {
     name: "Silk Road",
-    date: "Fall 2020",
+    date: "November 2020 - December 2020",
     tools: ["Java", "Apache Derby", "JavaFX", "Gson"],
     tagline: "Multithreaded auction server",
     description: `
@@ -240,8 +272,24 @@ const projectsList = [
     },
   },
   {
+    name: "Speech Analysis with NLP",
+    date: "October 2020",
+    tools: ["Google Cloud", "NLP", "Node.js", "React"],
+    tagline: "Hack Texas 2020 submission",
+    description: `
+        HackTX 2020 challenged us to use Google Cloud Platform to create something
+        unique. We decided to use GCP's NLP services to improve users' speaking
+        skills by providing feedback on tone and speech style.
+      `,
+    tag: "Personal",
+    links: {
+      "DevPost": "https://devpost.com/software/nlp-speech-analysis",
+      "GitHub": "https://github.com/ishan0102/hacktx-20",
+    },
+  },
+  {
     name: "Runkeeper",
-    date: "Summer 2020",
+    date: "May 2020 - June 2020",
     tools: ["Python", "Tkinter", "OpenPyXL"],
     tagline: "Track running statistics",
     description: `
@@ -257,7 +305,7 @@ const projectsList = [
   },
   {
     name: "T-Rex Run",
-    date: "Spring 2020",
+    date: "May 2020",
     tools: ["C++", "C", "ARM Assembly"],
     tagline: "Google's dinosaur game",
     description: `
@@ -267,7 +315,7 @@ const projectsList = [
       `,
     tag: "School",
     links: {
-      "Website": "https://www.youtube.com/watch?v=mLqsLVLjyEE",
+      "YouTube": "https://www.youtube.com/watch?v=mLqsLVLjyEE",
       "GitHub": "https://github.com/ishan0102/t-rex-run",
     },
   },
