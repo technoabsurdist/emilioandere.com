@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      {router.pathname !== '/build' && <Nav />}
+      <Nav />
       <Providers />
       <Component {...pageProps} />
     </>

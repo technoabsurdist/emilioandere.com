@@ -65,7 +65,8 @@ export function Home() {
             <SectionContent>
               <div className="prose -mb-8">
                 <p>
-                Hey, I'm Ishan! I'm currently researching large language models with Kyle Mahowald.
+                Hey, I'm Ishan! I'm currently researching large language models with Kyle Mahowald. 
+                I recently graduated from UT Austin with degrees in Electrical and Computer Engineering and Mathematics.
                 In the past, I've worked on:
                 </p>
                 <ul>
@@ -111,17 +112,17 @@ export function Home() {
             <SectionContent>
               <Image
                 priority
-                src="/static/img/austin.png"
+                src="/static/img/nyc.png"
                 width={550}
                 height={300}
                 layout="responsive"
                 className="rounded-xl"
                 quality={100}
-                alt="Map of Austin with blue location dot in the middle"
+                alt="Map of NYC with blue location dot in the middle"
               />
               <p className="flex items-center justify-end pt-2 space-x-2 text-sm text-quaternary md:text-right">
                 <MapPin size={12} />
-                <span>Austin, TX</span>
+                <span>NYC</span>
               </p>
             </SectionContent>
           </SectionContainer>
