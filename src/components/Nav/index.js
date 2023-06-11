@@ -34,7 +34,7 @@ export function Nav() {
           </Link>
           <Link href="https://ishan.coffee">
             <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
-              Writing
+              Notes
             </a>
           </Link>
           <Link href="/static/pdf/resume.pdf">
