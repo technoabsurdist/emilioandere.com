@@ -93,7 +93,7 @@ const projectsList = [
     `,
     tag: "Work",
     links: {
-      "GitHub": "https://github.com/ishan0102/m-361k"
+      "GitHub": "https://github.com/ishan0102/video-qa"
     }
   },
   {
