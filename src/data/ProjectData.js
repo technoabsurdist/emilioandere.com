@@ -1,5 +1,19 @@
 const projectsList = [
   {
+    name: "engblogs",
+    date: "August 2023",
+    tools: ["GPT-3.5", "Postgres", "Cron"],
+    tagline: "Learn from your favorite tech companies",
+    description: `
+      This site aggregates blog posts from dozens of tech companies and startups and summarizes them. This project went briefly viral and has 130 stars on GitHub.
+    `,
+    tag: "Personal",
+    links: {
+      "Website": "https://engblogs.dev",
+      "GitHub": "https://github.com/ishan0102/engblogs",
+    }
+  },
+  {
     name: "Hermes Mail",
     date: "May 2023",
     tools: ["Python", "PyPI"],
