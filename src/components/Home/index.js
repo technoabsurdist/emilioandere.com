@@ -65,9 +65,11 @@ export function Home() {
             <SectionContent>
               <div className="prose -mb-8">
                 <p>
-                Hey, I'm Ishan! I'm a software engineer in New York and do LLM research with <a href="https://mahowak.github.io">Kyle Mahowald</a> in my free time. 
-                I recently graduated from UT Austin with a B.S. in Electrical and Computer Engineering and a B.S.A. in Mathematics.
-                In the past, I've worked on:
+                  Hey, I'm Ishan! I'm a software engineer in New York and do LLM research with <a href="https://mahowak.github.io">Kyle Mahowald</a> in my free time. 
+                  I recently graduated from UT Austin with a B.S. in Electrical and Computer Engineering and a B.S.A. in Mathematics.
+                </p>
+                <p>
+                  In the past, I've worked on:
                 </p>
                 <ul>
                   <li>LLMs for web browsing at <a href="https://minion.ai">Minion AI</a></li>
