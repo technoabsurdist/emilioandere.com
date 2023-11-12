@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { MapPin } from 'react-feather'
 import { Detail } from '../Detail'
-import { HomeData } from '../../data/HomeData'
 
 function SectionTitle(props) {
   return (
@@ -128,60 +127,6 @@ export function Home() {
               </p>
             </SectionContent>
           </SectionContainer>
-
-          {/* Work */}
-          {/* <SectionContainer>
-            <SectionTitle>Work</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.workHistory.map((job) => (
-                  <TableRow
-                    href={job.href}
-                    title={job.title}
-                    subtitle={job.subtitle}
-                    date={job.date}
-                    key={job.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
-
-          {/* Research */}
-          {/* <SectionContainer>
-            <SectionTitle>Research</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.research.map((org) => (
-                  <TableRow
-                    href={org.href}
-                    title={org.title}
-                    subtitle={org.subtitle}
-                    date={org.date}
-                    key={org.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
-
-          {/* Organizations */}
-          {/* <SectionContainer>
-            <SectionTitle>Organizations</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.organizations.map((org) => (
-                  <TableRow
-                    href={org.href}
-                    title={org.title}
-                    subtitle={org.subtitle}
-                    date={org.date}
-                    key={org.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
 
           {/* Spotify Widget */}
           <SectionContainer>

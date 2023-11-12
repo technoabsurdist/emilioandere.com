@@ -145,26 +145,6 @@ export function Projects() {
             )}
           </div>
         </div>
-
-        {/* Nav */}
-        {/* <div className="fixed z-5 top-[3.8125rem] bottom-0 right-[max(0px,calc(50%-90rem))] py-10 overflow-y-scroll scrollbar-hide hidden 2xl:block">
-          <div className="px-8">
-            <ul className="text-slate-700 text-sm leading-6">
-              <li className="mb-4 text-gray-900 dark:text-gray-100">
-                Contents
-              </li>
-              {ProjectData.projectsList.map((project, index) => (
-                <li key={index} className="hover:text-indigo-500">
-                  <Link href={`#${project.name.replaceAll(" ", "-")}`}>
-                    <a className="py-1 font-medium text-primary hover:text-indigo-500">
-                      {project.name}
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div> */}
       </div>
     </div>
   )
