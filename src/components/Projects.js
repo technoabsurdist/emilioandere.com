@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { ProjectData } from '../../data/ProjectData'
-import ChromeDinoGame from 'react-chrome-dino';
+import { ProjectData } from '../data/ProjectData'
 
 function Project({ name, date, tools, tagline, description, tag, links }) {
   return (
@@ -92,8 +91,6 @@ export function Projects() {
     { key: 'School', color: 'violet' },
   ];
 
-  const isNothingSelected = Object.values(filter).every((value) => !value);
-
   return (
     <div>
       <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scrollbar-hide scroll-smooth">
@@ -119,30 +116,24 @@ export function Projects() {
 
           {/* Projects */}
           <div className="mt-6">
-            {isNothingSelected ? (
-              <div className="">
-                <ChromeDinoGame />
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
-                {ProjectData.projectsList.map((project, index) => {
-                  if (filter[project.tag]) {
-                    return <Project
-                      key={index}
-                      name={project.name}
-                      date={project.date}
-                      tools={project.tools}
-                      tagline={project.tagline}
-                      description={project.description}
-                      tag={project.tag}
-                      website={project.website}
-                      github={project.github}
-                      links={project.links}
-                    />
-                  }
-                })}
-              </div>
-            )}
+            <div className="grid grid-cols-1 mt-4 md:grid-cols-2 gap-4">
+              {ProjectData.projectsList.map((project, index) => {
+                if (filter[project.tag]) {
+                  return <Project
+                    key={index}
+                    name={project.name}
+                    date={project.date}
+                    tools={project.tools}
+                    tagline={project.tagline}
+                    description={project.description}
+                    tag={project.tag}
+                    website={project.website}
+                    github={project.github}
+                    links={project.links}
+                  />
+                }
+              })}
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { MapPin } from 'react-feather'
-import { Detail } from '../Detail'
+import { Detail } from './Detail'
 
 function SectionTitle(props) {
   return (
