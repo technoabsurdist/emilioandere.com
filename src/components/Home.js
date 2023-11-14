@@ -135,18 +135,6 @@ export function Home() {
               <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/12DxIGMOK6o2ZQ5PdT8Hzv?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </SectionContent>
           </SectionContainer>
-
-          {/* Footer */}
-          <SectionContainer>
-            <SectionTitle></SectionTitle>
-            <SectionContent>
-              <div className="flex justify-center">
-                <div className="prose">
-                  Design inspired by <a href="https://www.brianlovin.com" target="_blank" rel="noopener noreferrer">Brian Lovin</a>
-                </div>
-              </div>
-            </SectionContent>
-          </SectionContainer>
         </div>
       </Detail.ContentContainer>
     </Detail.Container>
