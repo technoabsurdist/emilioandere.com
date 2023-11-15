@@ -2,7 +2,7 @@ import { ProjectData } from '../data/projects'
 
 function Project({ name, date, tagline, link}) {
   return (
-    <a href={link} className="flex justify-between text-secondary py-1 hover:bg-[#f0f0f0] dark:hover:bg-[#1c1c21] group">
+    <a href={link} className="flex justify-between text-secondary py-1 group">
       <strong className="flex-none font-medium text-gray-900 group-hover:text-indigo-600 dark:text-gray-100 dark:group-hover:text-indigo-500">{name}</strong>
       <p className="ml-auto hidden sm:inline mr-8">{tagline}</p>
       <p>{date}</p>
