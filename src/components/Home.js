@@ -18,8 +18,6 @@ function SectionContent(props) {
 function TableRow({ href, title, subtitle, date }) {
   return (
     <a
-      target="_blank"
-      rel="noopener noreferrer"
       href={href}
       className="flex items-center space-x-4 group"
     >
