@@ -1,6 +1,6 @@
-import * as React from 'react'
+import { forwardRef } from "react";
 
-const Container = React.forwardRef(
+const Container = forwardRef(
   (props, ref) => {
     return (
       <div

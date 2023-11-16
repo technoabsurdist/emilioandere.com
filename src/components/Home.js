@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { MapPin } from 'react-feather'
-import { Detail } from '../Detail'
-import { HomeData } from '../../data/HomeData'
+import { Detail } from './Detail'
 
 function SectionTitle(props) {
   return (
@@ -19,8 +18,6 @@ function SectionContent(props) {
 function TableRow({ href, title, subtitle, date }) {
   return (
     <a
-      target="_blank"
-      rel="noopener noreferrer"
       href={href}
       className="flex items-center space-x-4 group"
     >
@@ -65,13 +62,14 @@ export function Home() {
             <SectionContent>
               <div className="prose -mb-8">
                 <p>
-                  Hey, I'm Ishan! I'm a software engineer in New York and do LLM research with <a href="https://mahowak.github.io">Kyle Mahowald</a> in my free time. 
-                  I recently graduated from UT Austin with a B.S. in Electrical and Computer Engineering and a B.S.A. in Mathematics.
+                  Hey, I'm Ishan! I'm a software engineer in New York and build things with LLMs in my free time. 
+                  I recently graduated from UT Austin with degrees in Electrical and Computer Engineering and Mathematics.
                 </p>
                 <p>
                   In the past, I've worked on:
                 </p>
                 <ul>
+                  <li>Interpretability research with <a href="https://mahowak.github.io">Kyle Mahowald</a></li>
                   <li>LLMs for web browsing at <a href="https://minion.ai">Minion AI</a></li>
                   <li>Text-to-speech model evaluation at <a href="https://unrealspeech.com/">Unreal Speech</a></li>
                   <li>Configurable throttling for video classifications at <a href="https://www.youtube.com/jobs/trust-and-safety/">YouTube</a></li>
@@ -129,77 +127,11 @@ export function Home() {
             </SectionContent>
           </SectionContainer>
 
-          {/* Work */}
-          {/* <SectionContainer>
-            <SectionTitle>Work</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.workHistory.map((job) => (
-                  <TableRow
-                    href={job.href}
-                    title={job.title}
-                    subtitle={job.subtitle}
-                    date={job.date}
-                    key={job.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
-
-          {/* Research */}
-          {/* <SectionContainer>
-            <SectionTitle>Research</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.research.map((org) => (
-                  <TableRow
-                    href={org.href}
-                    title={org.title}
-                    subtitle={org.subtitle}
-                    date={org.date}
-                    key={org.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
-
-          {/* Organizations */}
-          {/* <SectionContainer>
-            <SectionTitle>Organizations</SectionTitle>
-            <SectionContent>
-              <div className="flex flex-col space-y-3">
-                {HomeData.organizations.map((org) => (
-                  <TableRow
-                    href={org.href}
-                    title={org.title}
-                    subtitle={org.subtitle}
-                    date={org.date}
-                    key={org.href}
-                  />
-                ))}
-              </div>
-            </SectionContent>
-          </SectionContainer> */}
-
           {/* Spotify Widget */}
           <SectionContainer>
             <SectionTitle>Music</SectionTitle>
             <SectionContent>
               <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/12DxIGMOK6o2ZQ5PdT8Hzv?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </SectionContent>
-          </SectionContainer>
-
-          {/* Footer */}
-          <SectionContainer>
-            <SectionTitle></SectionTitle>
-            <SectionContent>
-              <div className="flex justify-center">
-                <div className="prose">
-                  Design inspired by <a href="https://www.brianlovin.com" target="_blank" rel="noopener noreferrer">Brian Lovin</a>
-                </div>
-              </div>
             </SectionContent>
           </SectionContainer>
         </div>

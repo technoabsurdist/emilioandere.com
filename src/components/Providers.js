@@ -6,7 +6,7 @@ import * as React from 'react'
 const defaultSEO = {
   title: 'Ishan Shah',
   description:
-    'Software engineer, student, and writer, living in San Francisco.',
+    'Software engineer living in NYC.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
