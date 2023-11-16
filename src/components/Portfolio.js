@@ -13,7 +13,7 @@ function Project({ name, date, tagline, link}) {
 export function Portfolio() {
   return (
     <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scrollbar-hide scroll-smooth px-8">
-      <div className="mx-auto w-full max-w-2xl mt-8 mb-32">
+      <div className="mx-auto w-full max-w-2xl mt-4 sm:mt-8 mb-32">
         {ProjectData.projectsList.map((project, index) => {
           return <Project
             key={index}

@@ -1,21 +1,57 @@
 const projectsList = [
   {
+    name: "rsrch.space",
+    date: "2023",
+    tagline: "Stream of my favorite papers and links",
+    link: "https://www.rsrch.space/"
+  },
+  {
+    name: "vimGPT",
+    date: "2023",
+    tagline: "Browse the web with GPT-4V and Vimium",
+    link: "https://github.com/ishan0102/vimGPT"
+  },
+  {
+    name: "ishan.coffee",
+    date: "2023",
+    tagline: "Zettelkasten for my brain using Quartz",
+    link: "https://www.ishan.coffee/"
+  },
+  {
     name: "Engblogs",
     date: "2023",
-    tagline: "Learn from your favorite tech companies",
+    tagline: "Summarizing tech blogs with GPT-3.5",
     link: "https://engblogs.dev"
   },
   {
-    name: "Hermes Mail",
+    name: "arXiv Autolink",
     date: "2023",
-    tagline: "Email alerts for Python scripts",
-    link: "https://github.com/ishan0102/hermes-mail"
+    tagline: "Chrome extension that finds arXiv links",
+    link: "https://github.com/ishan0102/arxiv-autolink"
+  },
+  {
+    name: "Aphelia",
+    date: "2023",
+    tagline: "My personal assistant inside Discord",
+    link: "https://github.com/ishan0102/aphelia"
   },
   {
     name: "Countdowns",
     date: "2023",
-    tagline: "Beautiful countdown timers",
+    tagline: "Beautiful, shareable countdown timers",
     link: "https://countdowns.live"
+  },
+  {
+    name: "Hermes Mail",
+    date: "2023",
+    tagline: "Add email alerts to your Python scripts",
+    link: "https://github.com/ishan0102/hermes-mail"
+  },
+  {
+    name: "Re:Form",
+    date: "2023",
+    tagline: "Realtime exercise monitoring with PoseNet",
+    link: "https://www.youtube.com/watch?v=ir3zXi55mm4"
   },
   {
     name: "Do LLMs Know Grammar?",
@@ -24,106 +60,111 @@ const projectsList = [
     link: "/static/pdf/llm-grammar.pdf"
   },
   {
-    name: "Re:Form",
-    date: "2023",
-    tagline: "A smart exercise app",
-    link: "https://www.youtube.com/watch?v=ir3zXi55mm4"
-  },
-  {
     name: "rsrch",
     date: "2023",
-    tagline: "A Python package to manage arXiv papers",
+    tagline: "Manage arXiv papers with Notion",
     link: "https://github.com/ishan0102/rsrch"
   },
   {
     name: "Video QA",
     date: "2023",
-    tagline: "Ask questions about videos",
+    tagline: "Question answering with Sieve and CLIP",
     link: "https://github.com/ishan0102/video-qa"
+  },
+  {
+    name: "Video Copilot",
+    date: "2023",
+    tagline: "Copilot for video editing with Sieve",
+    link: "https://github.com/ishan0102/video-copilot"
   },
   {
     name: "Audio Wiki",
     date: "2022",
-    tagline: "Listen to Wikipedia",
+    tagline: "Wikipedia meets Unreal Speech TTS",
     link: "https://audio.wiki"
+  },
+  {
+    name: "Advent of Agents",
+    date: "2022",
+    tagline: "Solving Advent of Code with ChatGPT",
+    link: "https://github.com/ishan0102/aoc-2022-chatgpt"
   },
   {
     name: "Real Analysis Textbook",
     date: "2022",
-    tagline: "A real analysis textbook",
+    tagline: "Notes from Real Analysis at UT Austin",
     link: "/static/pdf/real-analysis.pdf"
   },
   {
     name: "Pictionary",
     date: "2022",
-    tagline: "Play Pictionary against a computer",
-    link: "/static/pdf/pictionary.pdf"
+    tagline: "AI Pictionary trained on Quick, Draw!",
+    link: "https://github.com/ishan0102/pictionary"
   },
   {
     name: "Commentary",
     date: "2022",
-    tagline: "Predicting the sentiment of a tweet's replies",
+    tagline: "Sentiment analysis for a Tweet's replies",
     link: "https://github.com/ishan0102/commentary"
   },
   {
     name: "Exploring Bias in GPT-3",
     date: "2021",
-    tagline: "Critique on OpenAI's latest model",
+    tagline: "Probing GPT-3 for gender and racial bias.",
     link: "/static/pdf/gpt3.pdf"
   },
   {
     name: "PintOS",
     date: "2021",
-    tagline: "An operating system built from scratch",
+    tagline: "Building an OS from scratch",
     link: "https://web.stanford.edu/class/cs140/projects/pintos/pintos_1.html"
   },
   {
     name: "Yash",
     date: "2021",
-    tagline: "Yet Another Shell",
-    link: ""
+    tagline: "Building a Bash-like shell from scratch",
+    link: "https://magicant.github.io/yash/"
   },
   {
     name: "PeerNet",
     date: "2021",
-    tagline: "Peer-to-peer tutoring",
-    link: ""
+    tagline: "Peer-to-peer tutoring for universities",
   },
   {
     name: "Longhorn Computing Services",
     date: "2021",
-    tagline: "Cloud computing manager",
+    tagline: "Simulated, AWS-like cloud manager",
     link: "https://github.com/JimothyGreene/EE461L-Group2-FinalProject"
   },
   {
     name: "Day in Review",
     date: "2020",
-    tagline: "Email summarizer",
-    link: "https://github.com/DayInReview/day-in-review"
+    tagline: "Email summarization with a Seq2Seq LSTM",
+    link: "https://github.com/DayInReview/email-summarizer"
   },
   {
     name: "Silk Road",
     date: "2020",
-    tagline: "Multithreaded auction server",
-    link: ""
+    tagline: "Multithreaded auction server in Java",
+    link: "https://github.com/ishan0102/silk-road"
   },
   {
-    name: "Speech Analysis with NLP",
+    name: "Speech Feedback",
     date: "2020",
-    tagline: "Hack Texas 2020 submission",
-    link: "https://devpost.com/software/nlp-speech-analysis"
+    tagline: "Speech analysis with Google Cloud NLP",
+    link: "https://github.com/ishan0102/hacktx-20"
   },
   {
     name: "Runkeeper",
     date: "2020",
-    tagline: "Track running statistics",
+    tagline: "Track running with an Excel database",
     link: "https://github.com/ishan0102/runkeeper"
   },
   {
     name: "T-Rex Run",
     date: "2020",
-    tagline: "Google's dinosaur game",
-    link: "https://www.youtube.com/watch?v=mLqsLVLjyEE"
+    tagline: "Chrome's dinosaur game on the TM4C",
+    link: "https://github.com/ishan0102/t-rex-run"
   }
 ];
 
