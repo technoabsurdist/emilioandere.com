@@ -65,7 +65,7 @@ export function Home() {
                   Hey, I'm Ishan! I'm a software engineer in New York and build things with LLMs in my free time. 
                   I recently graduated from UT Austin with degrees in Electrical and Computer Engineering and Mathematics.
                 </p>
-                <p>
+                <p className="-mb-2">
                   In the past, I've worked on:
                 </p>
                 <ul>
