@@ -85,7 +85,7 @@ export function Home() {
             <SectionContent>
               <div className="flex flex-col space-y-3">
                 <TableRow
-                  href={'mailto:ishan0102@utexas.edu'}
+                  href={'mailto:ishan0102@gmail.com'}
                   title={'Email'}
                   subtitle={'Send'}
                   date={''}
