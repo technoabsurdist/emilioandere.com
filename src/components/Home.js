@@ -62,13 +62,14 @@ export function Home() {
             <SectionContent>
               <div className="prose -mb-8">
                 <p>
-                  Hey, I'm Ishan! I'm a software engineer in New York and build things with LLMs in my free time. 
-                  I recently graduated from UT Austin with degrees in Electrical and Computer Engineering and Mathematics.
+                  Hey, I'm Ishan! I'm a founding engineer at a stealth startup (YC W24) and like building with LLMs in my free time.
+                  I graduated from UT Austin with degrees in Computer Engineering and Mathematics and now I live in NYC.
                 </p>
                 <p className="-mb-2">
                   In the past, I've worked on:
                 </p>
                 <ul>
+                  <li>Distributed systems for earnings reports at <a href="https://www.bloomberg.com/company/">Bloomberg</a></li>
                   <li>Interpretability research with <a href="https://mahowak.github.io">Kyle Mahowald</a></li>
                   <li>LLMs for web browsing at <a href="https://minion.ai">Minion AI</a></li>
                   <li>Text-to-speech model evaluation at <a href="https://unrealspeech.com/">Unreal Speech</a></li>
