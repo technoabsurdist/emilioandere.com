@@ -47,7 +47,7 @@ export function Home() {
         {/* Avatar */}
         <div className="justify-center flex mt-5 mb-6 md:ml-20">
           <Image
-            src="/static/img/avatar4.png"
+            src="/static/img/avatar5.svg"
             alt="Ishan"
             width={330}
             height={230}
