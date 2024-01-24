@@ -15,8 +15,7 @@ export function Portfolio() {
     <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scrollbar-hide scroll-smooth px-8">
       <div className="mx-auto w-full max-w-2xl mt-4 sm:mt-8 mb-52 md:mb-32">
         <div className="prose mb-2 sm:mb-6">
-          My favorite hobby is doing side projects, ranging from writing my own textbook to making my own productivity tools to browsing the web autonomously. 
-          These projects have been visited over 200,000 times.
+          I love doing side projects in multiple fields, ranging from developing my own tools to writing on different subjects I'm learning about.
         </div>
         {ProjectData.projectsList.map((project, index) => {
           return <Project

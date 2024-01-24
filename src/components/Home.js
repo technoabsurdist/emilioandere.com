@@ -45,13 +45,14 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="justify-center flex mb-6 md:ml-20 dark:hidden">
+        <div className="justify-center flex mt-5 mb-6 md:ml-20">
           <Image
-            src="/static/img/avatar.png"
+            src="/static/img/avatar4.png"
             alt="Ishan"
-            width={200}
-            height={200}
+            width={330}
+            height={230}
             quality={100}
+            className='rounded-md mt-5'
           />
         </div>
 
@@ -60,21 +61,28 @@ export function Home() {
           <SectionContainer>
             <SectionTitle />
             <SectionContent>
-              <div className="prose -mb-8">
+              <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Ishan! I'm a founding engineer at a stealth startup (YC W24) and like building with LLMs in my free time.
-                  I graduated from UT Austin with degrees in Computer Engineering and Mathematics and now I live in NYC.
+                  Hey, I'm Emi! I'm a junior at UChicago studying Computer Science and Mathematics.
+                  I like building useful software in my free time.
                 </p>
                 <p className="-mb-2">
                   In the past, I've worked on:
                 </p>
                 <ul>
-                  <li>Distributed systems for earnings reports at <a href="https://www.bloomberg.com/company/">Bloomberg</a></li>
-                  <li>Interpretability research with <a href="https://mahowak.github.io">Kyle Mahowald</a></li>
-                  <li>LLMs for web browsing at <a href="https://minion.ai">Minion AI</a></li>
-                  <li>Text-to-speech model evaluation at <a href="https://unrealspeech.com/">Unreal Speech</a></li>
-                  <li>Configurable throttling for video classifications at <a href="https://www.youtube.com/jobs/trust-and-safety/">YouTube</a></li>
-                  <li>Fraud detection using customer reviews at <a href="https://www.capitalone.com/tech/machine-learning/">Capital One</a></li>
+                  <li>On/off-ramp feature and API for stablecoin-fiat conversions at <a href="https://spherepay.co/">Sphere Labs</a></li>
+                  <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1">(Natural Backdoor Datasets)</a></li>
+                  <li>Engineered rewards feature at <a href="https://app.impossible.finance/rewards">Impossible Finance</a></li>
+                  <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg">Glip</a></li>
+                </ul>
+                <p className="-mb-2">
+                  Some notable personal projects I've worked on: 
+                </p>
+                <ul>
+                  <li><a href="https://transcript-fe.vercel.app/">transcript.ai</a> —LLM-powered Youtube transcription service.</li>
+                  <li><a href="https://schoolhouse.world/">schoolhouse.world</a> —Founding tutor. Taught calculus to 200+ students.</li>
+                  <li><a href="https://liga-app.xyz/">LIGA</a> —UChicago Resume book tool for student organizations.</li>
+                  <li><a href="">minimal-ml</a> —Easy-to-use common ML functionalities python package.</li>
                 </ul>
               </div>
             </SectionContent>
@@ -86,19 +94,19 @@ export function Home() {
             <SectionContent>
               <div className="flex flex-col space-y-3">
                 <TableRow
-                  href={'mailto:ishan0102@gmail.com'}
+                  href={'mailto:andere.emi@gmail.com'}
                   title={'Email'}
                   subtitle={'Send'}
                   date={''}
                 />
                 <TableRow
-                  href={'https://github.com/ishan0102'}
+                  href={'https://github.com/technoabsurdist'}
                   title={'GitHub'}
                   subtitle={'Follow'}
                   date={''}
                 />
                 <TableRow
-                  href={'https://twitter.com/ishan0102'}
+                  href={'https://twitter.com/technoabsurdist'}
                   title={'Twitter'}
                   subtitle={'Follow'}
                   date={''}
@@ -108,7 +116,7 @@ export function Home() {
           </SectionContainer>
 
           {/* Where */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Where</SectionTitle>
             <SectionContent>
               <Image
@@ -126,15 +134,15 @@ export function Home() {
                 <span>NYC</span>
               </p>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
 
           {/* Spotify Widget */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Music</SectionTitle>
             <SectionContent>
-              <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/12DxIGMOK6o2ZQ5PdT8Hzv?utm_source=generator" width="100%" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/66p40tOGsUYyMmIfaBr1Mk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
         </div>
       </Detail.ContentContainer>
     </Detail.Container>

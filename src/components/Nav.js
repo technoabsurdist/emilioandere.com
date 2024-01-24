@@ -16,7 +16,7 @@ export function Nav() {
       <div className="flex items-center flex-shrink-0 ml-0 md:ml-4 mr-6">
         <Link href="/">
           <a className="inline-block text-primary text-xl md:text-2xl font-semibold hover:text-indigo-500 font-grenette">
-            Ishan Shah
+            Emilio Andere
           </a>
         </Link>
         <button className="items-center bg-off-white ml-2 rounded dark:bg-off-black focus:outline-none" onClick={toggleTheme}>
@@ -27,14 +27,14 @@ export function Nav() {
       </div>
       <div className="flex items-center w-auto">
         <div className="text-sm md:text-base font-normal md:font-medium md:flex-grow">
-          <Link href="/portfolio">
+          {/* <Link href="/portfolio">
             <a className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
               Portfolio
             </a>
-          </Link>
-          <Link href="https://ishan.coffee">
+          </Link> */}
+          <Link href="https://andereemi.substack.com/">
             <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
-              Notes
+              Writing
             </a>
           </Link>
           <Link href="/static/pdf/resume.pdf">

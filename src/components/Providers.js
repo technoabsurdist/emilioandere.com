@@ -4,18 +4,18 @@ import { DefaultSeo } from 'next-seo'
 import * as React from 'react'
 
 const defaultSEO = {
-  title: 'Ishan Shah',
+  title: 'Emilio Andere',
   description:
     'Software engineer living in NYC.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.ishanshah.me',
-    site_name: 'Ishan Shah',
+    site_name: 'Emilio Andere',
     images: [
       {
         url: 'https://www.ishanshah.me/static/og/default.png',
-        alt: 'Ishan Shah',
+        alt: 'Emilio Andere',
       },
     ],
   },
@@ -52,7 +52,7 @@ export function Providers() {
         />
 
         {/* OpenGraph */}
-        <meta property="og:title" content="Ishan Shah" key="title" />
+        <meta property="og:title" content="Emilio Andere" key="title" />
         <meta property="og:image" content="https://www.ishanshah.me/static/og/default.png" />
       </Head>
 

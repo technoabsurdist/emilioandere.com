@@ -6,8 +6,8 @@ export default function portfolio() {
     <>
       <Portfolio/>
       <Head>
-        <title>Portfolio • Ishan Shah</title>
-        <meta property="og:title" content="Portfolio • Ishan Shah" key="title" />
+        <title>Portfolio • Emilio Andere</title>
+        <meta property="og:title" content="Portfolio • Emilio Andere" key="title" />
       </Head>
     </>
   )
