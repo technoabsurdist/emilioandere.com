@@ -72,7 +72,7 @@ export function Home() {
                 <ul>
                   <li>On/off-ramp feature and API for stablecoin-fiat conversions at <a href="https://spherepay.co/">Sphere Labs</a></li>
                   <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1">(Natural Backdoor Datasets)</a></li>
-                  <li>Engineered rewards feature at <a href="https://app.impossible.finance/rewards">Impossible Finance</a></li>
+                  <li>Liquidity pools and and rewards feature at <a href="https://app.impossible.finance/rewards">Impossible Finance</a></li>
                   <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg">Glip</a></li>
                   <li>Founding tutor. Taught calculus to 200+ students at <a href="https://schoolhouse.world/">schoolhouse.world</a></li>
                 </ul>
