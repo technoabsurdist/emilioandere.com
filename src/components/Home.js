@@ -47,8 +47,8 @@ export function Home() {
         {/* Avatar */}
         <div className="justify-center flex mt-5 mb-6 md:ml-20">
           <Image
-            src="/static/img/avatar6.svg"
-            alt="Ishan"
+            src="/static/img/avatar7.svg"
+            alt="Emilio"
             width={330}
             height={230}
             quality={100}
@@ -63,7 +63,7 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emi! I'm a junior at UChicago studying Computer Science and Mathematics.
+                  Hey, I'm Emilio! I'm a junior at UChicago studying Computer Science and Mathematics.
                   I like building useful software in my free time.
                 </p>
                 <p className="-mb-2">
@@ -74,9 +74,10 @@ export function Home() {
                   <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1">(Natural Backdoor Datasets)</a></li>
                   <li>Engineered rewards feature at <a href="https://app.impossible.finance/rewards">Impossible Finance</a></li>
                   <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg">Glip</a></li>
+                  <li>Founding tutor. Taught calculus to 200+ students at <a href="https://schoolhouse.world/">schoolhouse.world</a></li>
                 </ul>
                 <p className="-mb-2">
-                  Some notable personal projects I've worked on: 
+                  Some notable personal projects I've built: 
                 </p>
                 <ul>
                   <li><a href="https://transcript-fe.vercel.app/">transcript.ai</a> —LLM-powered Youtube transcription service.</li>
