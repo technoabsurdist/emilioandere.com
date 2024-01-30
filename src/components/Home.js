@@ -20,6 +20,7 @@ function TableRow({ href, title, subtitle, date }) {
     <a
       href={href}
       className="flex items-center space-x-4 group"
+      target='_blank'
     >
       <strong className="flex-none font-medium text-gray-900 group-hover:text-indigo-600 dark:text-gray-100 dark:group-hover:text-indigo-500">
         {title}
