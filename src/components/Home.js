@@ -82,7 +82,6 @@ export function Home() {
                 </p>
                 <ul>
                   <li><a href="https://transcript-fe.vercel.app/" target="_blank">transcript.ai</a> —LLM-powered Youtube transcription service.</li>
-                  <li><a href="https://schoolhouse.world/" target="_blank">schoolhouse.world</a> —Founding tutor. Taught calculus to 200+ students.</li>
                   <li><a href="https://liga-app.xyz/" target="_blank">LIGA</a> —UChicago Resume book tool for student organizations.</li>
                   <li><a href="https://pypi.org/project/minimalml/" target='_blank'>minimal-ml</a> —Easy-to-use common ML functionalities python package.</li>
                 </ul>
