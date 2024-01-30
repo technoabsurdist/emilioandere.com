@@ -70,19 +70,19 @@ export function Home() {
                   In the past, I've worked on:
                 </p>
                 <ul>
-                  <li>On/off-ramp feature and API for stablecoin-fiat conversions at <a href="https://spherepay.co/">Sphere Labs</a></li>
-                  <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1">(Natural Backdoor Datasets)</a></li>
-                  <li>Liquidity pools and and rewards feature at <a href="https://app.impossible.finance/rewards">Impossible Finance</a></li>
-                  <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg">Glip</a></li>
-                  <li>Founding tutor. Taught calculus to 200+ students at <a href="https://schoolhouse.world/">schoolhouse.world</a></li>
+                  <li>On/off-ramp feature and API for stablecoin-fiat conversions at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
+                  <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1" target="_blank">(Natural Backdoor Datasets)</a></li>
+                  <li>Liquidity pools and and rewards feature at <a href="https://app.impossible.finance/rewards" target="_blank">Impossible Finance</a></li>
+                  <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg" target="_blank">Glip</a></li>
+                  <li>Founding tutor. Taught calculus to 200+ students at <a href="https://schoolhouse.world/" target="_blank">schoolhouse.world</a></li>
                 </ul>
                 <p className="-mb-2">
                   Some notable personal projects I've built: 
                 </p>
                 <ul>
-                  <li><a href="https://transcript-fe.vercel.app/">transcript.ai</a> —LLM-powered Youtube transcription service.</li>
-                  <li><a href="https://schoolhouse.world/">schoolhouse.world</a> —Founding tutor. Taught calculus to 200+ students.</li>
-                  <li><a href="https://liga-app.xyz/">LIGA</a> —UChicago Resume book tool for student organizations.</li>
+                  <li><a href="https://transcript-fe.vercel.app/" target="_blank">transcript.ai</a> —LLM-powered Youtube transcription service.</li>
+                  <li><a href="https://schoolhouse.world/" target="_blank">schoolhouse.world</a> —Founding tutor. Taught calculus to 200+ students.</li>
+                  <li><a href="https://liga-app.xyz/" target="_blank">LIGA</a> —UChicago Resume book tool for student organizations.</li>
                   <li><a href="https://pypi.org/project/minimalml/" target='_blank'>minimal-ml</a> —Easy-to-use common ML functionalities python package.</li>
                 </ul>
               </div>
