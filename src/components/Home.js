@@ -48,10 +48,10 @@ export function Home() {
         {/* Avatar */}
         <div className="justify-center flex mt-5 mb-6 md:ml-20">
           <Image
-            src="/static/img/avatar7.svg"
+            src="/static/img/avatar7.jpeg"
             alt="Emilio"
-            width={330}
-            height={230}
+            width={200}
+            height={200}
             quality={100}
             className='rounded-md mt-5'
           />
