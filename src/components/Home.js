@@ -81,8 +81,8 @@ export function Home() {
                   Some notable personal projects I've built: 
                 </p>
                 <ul>
-                  <li><a href="https://github.com/technoabsurdist/yb-llms" target="_blank">yb-llms</a> -API to interact with Youtube content through LLMs</li>
-                  <li><a href="https://github.com/technoabsurdist/transcript.ai" target="_blank">transcript.ai</a> -Youtube transcription service.</li>
+                  <li><a href="https://github.com/technoabsurdist/yb-llms" target="_blank">yb-llms</a> —API to interact with Youtube content through LLMs</li>
+                  <li><a href="https://github.com/technoabsurdist/transcript.ai" target="_blank">transcript.ai</a> —Youtube transcription service.</li>
                   <li><a href="https://liga-app.xyz/" target="_blank">LIGA</a> —UChicago Resume book tool for student organizations.</li>
                   <li><a href="https://pypi.org/project/minimalml/" target='_blank'>minimal-ml</a> —Easy-to-use common ML functionalities python package.</li>
                 </ul>
