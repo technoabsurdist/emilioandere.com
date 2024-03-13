@@ -83,7 +83,7 @@ export function Home() {
                 <ul>
                   <li>
                     <a href="https://github.com/technoabsurdist/uchi_catalog_llm" target="_blank">uchi_catalog_llm</a> 
-                    —LLM + RAG over embedded UChicago College Catalog 2023-2024
+                    —Chat with UChicago College Catalog
                   </li>
                   <li><a href="https://github.com/technoabsurdist/yb-llms" target="_blank">yb-llms</a> —API to interact with Youtube content through LLMs</li>
                   <li><a href="https://github.com/technoabsurdist/transcript.ai" target="_blank">transcript.ai</a> —Youtube transcription service.</li>
