@@ -32,11 +32,6 @@ export function Nav() {
               Portfolio
             </a>
           </Link> */}
-          <Link href="https://andereemi.substack.com/">
-            <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
-              Writing
-            </a>
-          </Link>
           <Link href="/static/pdf/resume.pdf">
             <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 text-primary hover:text-indigo-500">
               Resume
