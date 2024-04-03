@@ -15,7 +15,7 @@ export function Portfolio() {
     <div className="relative flex max-h-screen w-full flex-col overflow-y-scroll scrollbar-hide scroll-smooth px-8">
       <div className="mx-auto w-full max-w-2xl mt-4 sm:mt-8 mb-52 md:mb-32">
         <div className="prose mb-2 sm:mb-6">
-          I love doing side projects in multiple fields, ranging from developing my own tools to writing on different subjects I'm learning about.
+          I love doing side projects whenever I get the chance. Here are some of the projects I've worked on recently.
         </div>
         {ProjectData.projectsList.map((project, index) => {
           return <Project

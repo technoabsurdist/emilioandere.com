@@ -78,17 +78,8 @@ export function Home() {
                   <li>Founding tutor. Taught calculus/cs to 200+ students at <a href="https://schoolhouse.world/" target="_blank">schoolhouse.world</a></li>
                 </ul>
                 <p className="-mb-2">
-                  Some projects I've recently built: 
+                  Find my personal projects in my <a href="/portfolio">portfolio</a>
                 </p>
-                <ul>
-                  <li>
-                    <a href="https://github.com/technoabsurdist/uchi_catalog_llm" target="_blank">uchi_catalog_llm</a> 
-                    —Chat with UChicago College Catalog
-                  </li>
-                  <li><a href="https://github.com/technoabsurdist/yb-llms" target="_blank">yb-llms</a> —API to interact with Youtube content through LLMs</li>
-                  <li><a href="https://github.com/technoabsurdist/transcript.ai" target="_blank">transcript.ai</a> —Youtube transcription service.</li>
-                  <li><a href="https://liga-app.xyz/" target="_blank">LIGA</a> —UChicago Resume book tool for student organizations.</li>
-                </ul>
               </div>
             </SectionContent>
           </SectionContainer>

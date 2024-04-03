@@ -27,11 +27,11 @@ export function Nav() {
       </div>
       <div className="flex items-center w-auto">
         <div className="text-sm md:text-base font-normal md:font-medium md:flex-grow">
-          {/* <Link href="/portfolio">
+          <Link href="/portfolio">
             <a className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
               Portfolio
             </a>
-          </Link> */}
+          </Link>
           <Link href="/static/pdf/resume.pdf">
             <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 text-primary hover:text-indigo-500">
               Resume
