@@ -54,10 +54,41 @@ const projectsList = [
     link: 'https://marketplace.visualstudio.com/items?itemName=andere.emi&ssr=false#review-details'
   },
   {
+    name: 'InvoiceSystem',
+    date: '2023',
+    tagline: 'Minimalistic API for invoice processing',
+    link: 'https://github.com/technoabsurdist/invoice_system'
+  },
+  {
+
+    name: 'Populus',
+    date: '2023', 
+    tagline: 'DAO Tooling',
+    link: 'https://github.com/Populus-Tooling'
+  },
+  {
     name: "LIGA",
     date: "2022",
     tagline: "UChicago Resume book for RSOs",
     link: "https://liga-app.xyz/"
+  },
+  {
+    name: 'Blockchain Chicago',
+    date: '2022',
+    tagline: 'Projects by Blockchain Chicago UChicago club',
+    link: 'https://github.com/blockchain-chicago'
+  },
+  {
+    name: 'DeckedOut',
+    date: '2022',
+    tagline: 'Slideshow with prompt engineering platform',
+    link: 'https://github.com/the-buildrs/DeckedOut'
+  },
+  {
+    name: 'PlaylistPal',
+    date: '2022',
+    tagline: 'Generate Spotify playlists based on prompts',
+    link: 'https://github.com/the-buildrs/PlaylistPal'
   },
   {
     name: 'discord-digest',
