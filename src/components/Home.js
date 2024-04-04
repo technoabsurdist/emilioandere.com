@@ -139,12 +139,12 @@ export function Home() {
           </SectionContainer> */}
 
           {/* Spotify Widget */}
-          <SectionContainer>
+          {/* <SectionContainer>
             <SectionTitle>Music</SectionTitle>
             <SectionContent>
               <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/66p40tOGsUYyMmIfaBr1Mk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </SectionContent>
-          </SectionContainer>
+          </SectionContainer> */}
         </div>
       </Detail.ContentContainer>
     </Detail.Container>
