@@ -102,8 +102,14 @@ export function Home() {
                   date={''}
                 />
                 <TableRow
-                  href={'https://twitter.com/technoabsurdist'}
-                  title={'Twitter'}
+                  href={'https://x.com/technoabsurdist'}
+                  title={'X'}
+                  subtitle={'Follow'}
+                  date={''}
+                />
+                <TableRow
+                  href={'https://scholar.google.com/citations?user=qhHsPrgAAAAJ&hl=en&authuser=1'}
+                  title={'Google Scholar'}
                   subtitle={'Follow'}
                   date={''}
                 />
