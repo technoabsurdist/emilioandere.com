@@ -112,7 +112,7 @@ export function Home() {
                 />
                 <TableRow
                   href={'https://scholar.google.com/citations?user=qhHsPrgAAAAJ&hl=en&authuser=1'}
-                  title={'Google Scholar'}
+                  title={'Scholar'}
                   subtitle={'Follow'}
                   date={''}
                 />
