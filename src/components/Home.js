@@ -68,9 +68,9 @@ export function Home() {
                   I like building useful software in my free time.
                 </p>
 	  	<p className="-mb-2">
-	  	  This Summer, I'll be doing software engineering at <a href="https://elicit.com/">Elicit</a>
+	  	  This Summer, I'll be doing software engineering at <a href="https://elicit.com/">Elicit</a>!
 	  	</p>
-                <p className="-mb-2">
+                <p className="-mb-2 mt-5">
                   In the past, I've worked on:
                 </p>
                 <ul>
