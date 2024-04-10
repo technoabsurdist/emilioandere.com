@@ -67,10 +67,10 @@ export function Home() {
                   Hey, I'm Emilio! I'm a junior at UChicago studying Computer Science and Mathematics.
                   I like building useful software in my free time.
                 </p>
-	  	<p className="-mb-2">
+	  	<p className="">
 	  	  This Summer, I'll be doing software engineering at <a href="https://elicit.com/">Elicit</a>!
 	  	</p>
-                <p className="-mb-2 mt-5">
+                <p className="-mb-2">
                   In the past, I've worked on:
                 </p>
                 <ul>
