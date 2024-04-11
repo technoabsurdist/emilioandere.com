@@ -1,6 +1,6 @@
 const projectsList = [
   {
-    name: "LRS Writing Tutor",
+    name: "lrs-writing-tutor",
     date: "2024",
     tagline: "Writing tutor for UChicago Little Red Schoolhouse",
     link: "https://little-red-schoolhouse.vercel.app"
@@ -24,13 +24,13 @@ const projectsList = [
     link: "https://github.com/technoabsurdist/yb-llms"
   },
   {
-    name: "Personal Website",
+    name: "personal-website",
     date: "2023",
     tagline: "The website you're on!", 
     link: "https://emilioandere.com"
   },
   {
-    name: "Boller & Sally Textbook Notes",
+    name: "boller-and-sally-notes",
     date: "2023",
     tagline: "Some notes on Boller and Sally Calculus",
     link: "https://github.com/technoabsurdist/boller-sally-notes"
@@ -54,38 +54,38 @@ const projectsList = [
     link: 'https://marketplace.visualstudio.com/items?itemName=andere.emi&ssr=false#review-details'
   },
   {
-    name: 'InvoiceSystem',
+    name: 'invoice-system',
     date: '2023',
     tagline: 'Minimalistic API for invoice processing',
     link: 'https://github.com/technoabsurdist/invoice_system'
   },
   {
 
-    name: 'Populus',
+    name: 'populus',
     date: '2023', 
     tagline: 'DAO Tooling',
     link: 'https://github.com/Populus-Tooling'
   },
   {
-    name: "LIGA",
+    name: "liga",
     date: "2022",
     tagline: "UChicago Resume book for RSOs",
     link: "https://liga-app.xyz/"
   },
   {
-    name: 'Blockchain Chicago',
+    name: 'blockchain-chicago',
     date: '2022',
     tagline: 'Projects by Blockchain Chicago UChicago club',
     link: 'https://github.com/blockchain-chicago'
   },
   {
-    name: 'DeckedOut',
+    name: 'decked-out',
     date: '2022',
     tagline: 'Slideshow with prompt engineering platform',
     link: 'https://github.com/the-buildrs/DeckedOut'
   },
   {
-    name: 'PlaylistPal',
+    name: 'playlist-pal',
     date: '2022',
     tagline: 'Generate Spotify playlists based on prompts',
     link: 'https://github.com/the-buildrs/PlaylistPal'
