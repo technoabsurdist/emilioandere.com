@@ -1,5 +1,11 @@
 const projectsList = [
   {
+    name: "arxiv-pods",
+    date: "2024",
+    tagline: "Convert Arxiv papers to multi-chapter podcasts",
+    link: "https://research-pods.vercel.app/"
+  },
+  {
     name: "lrs-writing-tutor",
     date: "2024",
     tagline: "Writing tutor for UChicago Little Red Schoolhouse",
