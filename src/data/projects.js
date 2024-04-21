@@ -1,5 +1,12 @@
 const projectsList = [
   {
+    name: "find-good-podcasts",
+    date: "2024",
+    tagline: "Find good podcasts with LLM powered search",
+    link: "https://find-good-podcasts.vercel.app/"
+  },
+
+  {
     name: "arxiv-pods",
     date: "2024",
     tagline: "Convert Arxiv papers to multi-chapter podcasts",
