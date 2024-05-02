@@ -1,11 +1,16 @@
 const projectsList = [
   {
+    name: "yb-transcriptions-2",
+    date: "2024",
+    tagline: "Better youtube transcriptions",
+    link: "https://transcript-ai-iota.vercel.app/"
+  },
+  {
     name: "find-good-podcasts",
     date: "2024",
     tagline: "Find good podcasts with LLM powered search",
     link: "https://find-good-podcasts.vercel.app/"
   },
-
   {
     name: "arxiv-pods",
     date: "2024",
@@ -39,7 +44,7 @@ const projectsList = [
   {
     name: "personal-website",
     date: "2023",
-    tagline: "The website you're on!", 
+    tagline: "The website you're on!",
     link: "https://emilioandere.com"
   },
   {
@@ -75,7 +80,7 @@ const projectsList = [
   {
 
     name: 'populus',
-    date: '2023', 
+    date: '2023',
     tagline: 'DAO Tooling',
     link: 'https://github.com/Populus-Tooling'
   },
