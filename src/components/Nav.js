@@ -27,8 +27,13 @@ export function Nav() {
       </div>
       <div className="flex items-center w-auto">
         <div className="text-sm md:text-base font-normal md:font-medium md:flex-grow">
+          <Link href="https://emiandere.notion.site/5703210135da4345bf47e532f35ced61?v=33681204129f46baa617593de92dbae8&pvs=4">
+            <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 text-primary hover:text-indigo-500">
+              Thoughts
+            </a>
+          </Link>
           <Link href="/portfolio">
-            <a className="inline-block mr-3 md:mr-8 text-primary hover:text-indigo-500">
+            <a className="inline-block mr-3 md:mr-8 ml-5 text-primary hover:text-indigo-500">
               Portfolio
             </a>
           </Link>
@@ -37,6 +42,7 @@ export function Nav() {
               Resume
             </a>
           </Link>
+
         </div>
       </div>
     </nav>
