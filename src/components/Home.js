@@ -64,24 +64,24 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emilio! I'm a junior at UChicago studying Math and Computer Science.
-                  I like learning math and building useful software in my free time.
+                  Hey, I'm Emilio! I'm a junior at UChicago studying Math and Computer Science. <br />
+                  I love math and building useful software in my free time.
                 </p>
                 <p className="">
-                  This Summer, I'll be doing software engineering at <a href="https://elicit.com/" target="_blank">Elicit</a>!
+                  This Summer, I'll be doing engineering at <a href="https://elicit.com/" target="_blank">Elicit</a>!
                 </p>
                 <p className="-mb-2">
                   In the past, I've worked on:
                 </p>
                 <ul>
-                  <li>On/off-ramp feature and API for stablecoin-fiat conversions at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
+                  <li>On/off-ramp infrastructure <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
                   <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1" target="_blank">(Natural Backdoor Datasets)</a></li>
-                  <li>Liquidity pools and and rewards feature at <a href="https://app.impossible.finance/rewards" target="_blank">Impossible Finance</a></li>
-                  <li>Content automation and optimization scripts for video platforms at <a href="https://glip.gg" target="_blank">Glip</a></li>
-                  <li>Founding tutor. Taught calculus/cs to 200+ students at <a href="https://schoolhouse.world/" target="_blank">schoolhouse.world</a></li>
+                  <li>Rewards and liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
+                  <li>Content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
+                  <li>Founding tutor. Taught advanced math at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
                 </ul>
                 <p className="-mb-2">
-                  Find my personal projects in my <a href="/portfolio">portfolio</a>
+                  Find my personal projects in my <a href="/portfolio">portfolio</a>.
                 </p>
               </div>
             </SectionContent>
@@ -89,7 +89,7 @@ export function Home() {
 
           {/* Socials */}
           <SectionContainer>
-            <SectionTitle>Online</SectionTitle>
+            <SectionTitle></SectionTitle>
             <SectionContent>
               <div className="flex flex-col space-y-3">
                 <TableRow
