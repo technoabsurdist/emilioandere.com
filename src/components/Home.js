@@ -83,9 +83,6 @@ export function Home() {
                 <p className="-mb-2">
                   Find my personal projects in my <a href="/portfolio">portfolio</a>.
                 </p>
-                <p className="-mb-2">
-                  Find my personal projects in my <a href="/portfolio">portfolio</a>.
-                </p>
               </div>
             </SectionContent>
           </SectionContainer>
