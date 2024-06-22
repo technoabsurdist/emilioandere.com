@@ -64,11 +64,11 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emilio! I'm a junior at UChicago studying Math and Computer Science. <br />
-                  I love math and building useful software in my free time.
+                  Hey, I'm Emi! I'm a junior at UChicago studying Math with some Computer Science. <br />
+                  I enjoy building useful software in my free time.
                 </p>
                 <p className="">
-                  This Summer, I'm doing software engineering at <a href="https://elicit.com/" target="_blank">Elicit</a>!
+                  This Summer, I'm doing software engineering at <a href="https://elicit.com/" target="_blank">Elicit</a>.
                 </p>
                 <p className="-mb-2">
                   In the past, I've worked on:
