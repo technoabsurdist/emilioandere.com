@@ -78,7 +78,7 @@ export function Home() {
                   <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1" target="_blank">(Natural Backdoor Datasets)</a></li>
                   <li>Rewards and liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
                   <li>Content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
-                  <li>Founding tutor. Taught advanced math at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
+                  <li>Founding tutor. Taught math at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
                 </ul>
                 <p className="-mb-2">
                   Find my personal projects in my <a href="/portfolio">portfolio</a>.
