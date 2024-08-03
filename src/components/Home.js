@@ -64,7 +64,7 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emi! I'm a junior at UChicago studying Mathematics. <br />
+                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. <br />
                   I enjoy building useful software in my free time.
                 </p>
                 <p className="">
