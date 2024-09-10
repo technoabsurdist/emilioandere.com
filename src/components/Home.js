@@ -50,8 +50,8 @@ export function Home() {
           <Image
             src="/static/img/avatar7.jpeg"
             alt="Emilio"
-            width={200}
-            height={200}
+            width={201}
+            height={201}
             quality={100}
             className='rounded-md mt-5'
           />
