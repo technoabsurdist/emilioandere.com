@@ -32,11 +32,11 @@ export function Nav() {
               Portfolio
             </a>
           </Link>
-          <Link href="/static/pdf/resume.pdf">
+          {/* <Link href="/static/pdf/resume.pdf">
             <a target="_blank" rel="noopener noreferrer" className="inline-block mr-3 text-primary hover:text-indigo-500">
               Resume
             </a>
-          </Link>
+          </Link> */}
 
         </div>
       </div>

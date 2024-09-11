@@ -1,5 +1,11 @@
 const projectsList = [
   {
+    name: "autocommit",
+    date: "2024",
+    tagline: "git commit with LLM-generated messages based on git diff",
+    link: "https://github.com/technoabsurdist/autocommit",
+  },
+  {
     name: "yb-transcriptions-2",
     date: "2024",
     tagline: "Better youtube transcriptions",
