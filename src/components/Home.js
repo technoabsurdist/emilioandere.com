@@ -65,7 +65,7 @@ export function Home() {
               <div className="prose mt-5 -mb-8">
                 <p>
                   Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. <br />
-                  I like machine learning and enjoy building useful software in my free time.
+                  I like math, machine learning, and building useful software.
                 </p>
                 <p className="-mb-2">
                   In the past, I've done:
@@ -73,8 +73,8 @@ export function Home() {
                 <ul>
                   <li>Software engineering at <a href="https://elicit.com">Elicit</a></li>
                   <li>On/off-ramp infrastructure at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
-                  <li>ML Security Research in NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1" target="_blank">(Natural Backdoor Datasets)</a></li>
-                  <li>Rewards and liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
+                  <li>ML security research -- NeurIPS 2022 <a href="https://arxiv.org/abs/2206.10673v1" target="_blank">(Natural Backdoor Datasets)</a></li>
+                  <li>Rewards/liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
                   <li>Content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
                   <li>Founding tutor. Taught math at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
                 </ul>
