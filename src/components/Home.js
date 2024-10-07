@@ -71,8 +71,8 @@ export function Home() {
                   In the past, I've done:
                 </p>
                 <ul>
-                  <li>Built LLM-powered tools for research scientists at <a href="https://elicit.com">Elicit</a></li>
-                  <li>On/off-ramp infrastructure at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
+                  <li>LLM-powered features for research scientists at <a href="https://elicit.com">Elicit</a></li>
+                  <li>On/off-ramp infrastructure and <a href="https://docs.spherepay.co/api/bankAccount">Payouts</a> API at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
                   <li><a href="https://arxiv.org/abs/2206.10673v1" target="_blank">Natural Backdoor Datasets</a>; presented at NeurIPS 2022</li>
                   <li>Rewards/liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
                   <li>Content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
