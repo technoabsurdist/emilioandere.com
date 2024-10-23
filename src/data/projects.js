@@ -2,7 +2,7 @@ const projectsList = [
   {
     name: "autocommit",
     date: "2024",
-    tagline: "git commit with LLM-generated messages based on git diff",
+    tagline: "commit w/ auto-generated LLM messages",
     link: "https://github.com/technoabsurdist/autocommit",
   },
   {
