@@ -48,10 +48,10 @@ export function Home() {
         {/* Avatar */}
         <div className="justify-center flex mt-5 mb-6 md:ml-20 mr-10">
           <Image
-            src="/static/img/escher-wallpaper.jpg"
+            src="/static/img/gustav-courbet.png"
             alt="Emilio"
-            width={301}
-            height={201}
+            width={451}
+            height={301}
             quality={100}
             className='rounded-md mt-5'
           />
@@ -64,8 +64,8 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. <br />
-                  I like math, machine learning, and building useful software.
+                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. <br /> 
+                  I like engineering efficient systems, math, and deep learning.
                 </p>
                 <p className="-mb-2">
                   In the past, I've done:
