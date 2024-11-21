@@ -50,8 +50,8 @@ export function Home() {
           <Image
             src="/static/img/gustav-courbet.png"
             alt="Emilio"
-            width={451}
-            height={301}
+            width={421}
+            height={281}
             quality={100}
             className='rounded-md mt-5'
           />
@@ -67,16 +67,21 @@ export function Home() {
                   Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. <br /> 
                   I like engineering efficient systems, math, and deep learning.
                 </p>
+                <p className="">
+                  I currently work part-time as an ML research engineer at {" "}
+                  <a href="https://en.wikipedia.org/wiki/Argonne_National_Laboratory" target='_blank'>Argonne</a>, <br /> 
+                  scaling transformer-based <a href="https://tung-nd.github.io/stormer/" target='_blank'>weather prediction models</a>.
+                </p>
                 <p className="-mb-2">
                   In the past, I've done:
                 </p>
                 <ul>
-                  <li>various LLM features at <a href="https://elicit.com">Elicit</a></li>
-                  <li><a href="https://spherepay.co/ramp" target="_blank">on/off-ramp</a> infra and <a href="https://docs.spherepay.co/api/bankAccount" target="_blank">payouts</a> API at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
+                  <li>Various features at <a href="https://elicit.com">Elicit</a></li>
+                  <li><a href="https://spherepay.co/ramp" target="_blank">On/off-ramp</a> infra and <a href="https://docs.spherepay.co/api/bankAccount" target="_blank">payouts</a> API at <a href="https://spherepay.co/" target="_blank">Sphere Labs</a></li>
                   <li><a href="https://arxiv.org/abs/2206.10673v1" target="_blank">Natural Backdoor Datasets</a>; presented at NeurIPS 2022</li>
-                  <li>rewards/liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
-                  <li>content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
-                  <li>founding tutor; taught calculus at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
+                  <li>Rewards/liquidity pools at <a href="https://app.impossible.finance" target="_blank">Impossible Finance</a></li>
+                  <li>Content automation pipelines at <a href="https://glip.gg" target="_blank">Glip</a></li>
+                  <li>Founding tutor; taught calculus at <a href="https://schoolhouse.world/" target="_blank">Schoolhouse</a></li>
                 </ul>
                 <p className="-mb-2">
                   Find my personal projects in my <a href="/portfolio">portfolio</a>.
