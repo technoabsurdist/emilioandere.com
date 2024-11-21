@@ -25,14 +25,14 @@ function TableRow({ href, title, subtitle, date }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <strong className="flex-none font-medium text-gray-900 group-hover:text-indigo-600 
-                         dark:text-gray-100 dark:group-hover:text-indigo-500">
+      <span className="flex-none text-gray-700 group-hover:text-indigo-600 
+                      dark:text-gray-100 dark:group-hover:text-indigo-500">
         {title}
-      </strong>
+      </span>
       <span className="w-full border-t border-gray-300 border-dashed shrink 
                       dark:border-gray-800" />
       {subtitle && (
-        <span className="flex-none text-tertiary text-sm md:text-base">
+        <span className="flex-none text-tertiary text-sm">
           {subtitle}
         </span>
       )}
@@ -59,7 +59,7 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="justify-center flex mt-5 mb-6 md:ml-20 mr-10">
+        <div className="justify-center flex mt-5 mb-6 md:ml-20">
           <Image
             src="/static/img/gustav-courbet.png"
             alt="Emilio"
@@ -77,8 +77,8 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-5 -mb-8">
                 <p>
-                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics.
-                  <br /> 
+                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. {" "}
+                  {/* <br />  */}
                   I like engineering efficient systems, math, and deep learning.
                 </p>
 
@@ -88,7 +88,7 @@ export function Home() {
                      target="_blank" 
                      rel="noopener noreferrer">
                     Argonne
-                  </a>, <br /> 
+                  </a>,
                   scaling transformer-based{" "}
                   <a href="https://tung-nd.github.io/stormer/" 
                      target="_blank"
@@ -98,55 +98,44 @@ export function Home() {
                   .
                 </p>
 
-                <p className="-mb-2">
+                <p className="-mb-1 mt-6">
                   In the past, I've done:
                 </p>
 
-                <ul>
-                  <li>
-                    Various features at{" "}
-                    <a href="https://elicit.com">Elicit</a>
-                  </li>
-                  <li>
-                    <a href="https://spherepay.co/ramp" target="_blank" rel="noopener noreferrer">
-                      On/off-ramp
-                    </a>{" "}
-                    infra and{" "}
-                    <a href="https://docs.spherepay.co/api/bankAccount" target="_blank" rel="noopener noreferrer">
-                      payouts
-                    </a>{" "}
-                    API at{" "}
-                    <a href="https://spherepay.co/" target="_blank" rel="noopener noreferrer">
-                      Sphere Labs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://arxiv.org/abs/2206.10673v1" target="_blank" rel="noopener noreferrer">
-                      Natural Backdoor Datasets
-                    </a>
-                    ; presented at NeurIPS 2022
-                  </li>
-                  <li>
-                    Rewards/liquidity pools at{" "}
-                    <a href="https://app.impossible.finance" target="_blank" rel="noopener noreferrer">
-                      Impossible Finance
-                    </a>
-                  </li>
-                  <li>
-                    Content automation pipelines at{" "}
-                    <a href="https://glip.gg" target="_blank" rel="noopener noreferrer">
-                      Glip
-                    </a>
-                  </li>
-                  <li>
-                    Founding tutor; taught calculus at{" "}
-                    <a href="https://schoolhouse.world/" target="_blank" rel="noopener noreferrer">
-                      Schoolhouse
-                    </a>
-                  </li>
-                </ul>
+                <div className="flex flex-col space-y-3 mt-4">
+                  <TableRow
+                    href="https://elicit.com"
+                    title="Various fullstack features at Elicit"
+                    subtitle="Software Engineer Intern"
+                  />
+                  <TableRow
+                    href="https://spherepay.co/ramp"
+                    title="On/off-ramp infrastructure at Sphere"
+                    subtitle="Software Engineer Intern"
+                  />
+                  <TableRow
+                    href="https://arxiv.org/abs/2206.10673v1"
+                    title="Natural Backdoor Datasets (NeurIPS 2022)"
+                    subtitle="Research Assistant"
+                  />
+                  <TableRow
+                    href="https://app.impossible.finance"
+                    title="Rewards & liquidity pools at IF"
+                    subtitle="Software Engineer Intern"
+                  />
+                  <TableRow
+                    href="https://glip.gg"
+                    title="Automating data pipelines at Glip"
+                    subtitle="Software Engineer Intern"
+                  />
+                  <TableRow
+                    href="https://schoolhouse.world/"
+                    title="Calculus + CS tutor"
+                    subtitle="Founding Tutor"
+                  />
+                </div>
 
-                <p className="-mb-2">
+                <p className="-mb-2 mt-6">
                   Find my personal projects in my{" "}
                   <a href="/portfolio">portfolio</a>.
                 </p>
