@@ -4,7 +4,7 @@ import { Detail } from './Detail'
 function SectionTitle(props) {
   return (
     <h4
-      className="col-span-2 text-lg font-semibold text-primary md:text-right md:text-base 
+      className="col-span-2 text-sm font-semibold text-primary md:text-right md:text-base 
                  md:font-normal md:text-opacity-40"
       {...props}
     />
@@ -21,7 +21,7 @@ function TableRow({ href, title, subtitle, date }) {
   return (
     <a
       href={href}
-      className="flex items-center space-x-4 group"
+      className="flex items-center space-x-1.5 sm:space-x-2 md:space-x-4 group text-xs sm:text-sm md:text-base"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -32,7 +32,7 @@ function TableRow({ href, title, subtitle, date }) {
       <span className="w-full border-t border-gray-300 border-dashed shrink 
                       dark:border-gray-800" />
       {subtitle && (
-        <span className="flex-none text-tertiary text-sm">
+        <span className="flex-none text-tertiary text-[10px] sm:text-xs md:text-sm">
           {subtitle}
         </span>
       )}
@@ -48,7 +48,7 @@ function TableRow({ href, title, subtitle, date }) {
 function SectionContainer(props) {
   return (
     <div
-      className="grid items-start grid-cols-1 md:grid-cols-12 gap-3 md:gap-6"
+      className="grid items-start grid-cols-1 md:grid-cols-12 gap-1.5 sm:gap-2 md:gap-6"
       {...props}
     />
   )
@@ -59,26 +59,25 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="justify-center flex mt-5 mb-6 md:ml-20">
+        <div className="justify-center flex mt-2 sm:mt-3 md:mt-5 mb-3 sm:mb-4 md:mb-6 md:ml-20">
           <Image
             src="/static/img/gustav-courbet.png"
             alt="Emilio"
             width={421}
             height={281}
             quality={100}
-            className="rounded-md mt-5"
+            className="rounded-md w-11/12 sm:w-4/5 md:w-auto mt-2 sm:mt-3 md:mt-5"
           />
         </div>
 
-        <div className="pb-24 md:pb-4 space-y-12 md:space-y-16 dark:mt-8">
+        <div className="pb-12 sm:pb-16 md:pb-24 space-y-6 sm:space-y-8 md:space-y-16 dark:mt-8">
           {/* Bio */}
           <SectionContainer>
             <SectionTitle />
             <SectionContent>
-              <div className="prose mt-5 -mb-8">
+              <div className="prose mt-2 sm:mt-3 md:mt-5 -mb-4 sm:-mb-6 md:-mb-8 text-xs sm:text-sm md:text-base">
                 <p>
                   Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. {" "}
-                  {/* <br />  */}
                   I like engineering efficient systems, math, and deep learning.
                 </p>
 
@@ -98,11 +97,11 @@ export function Home() {
                   .
                 </p>
 
-                <p className="-mb-1 mt-6">
+                <p className="-mb-1 mt-3 sm:mt-4 md:mt-6">
                   In the past, I've done:
                 </p>
 
-                <div className="flex flex-col space-y-3 mt-4">
+                <div className="flex flex-col space-y-1.5 sm:space-y-2 md:space-y-3 mt-2 sm:mt-3 md:mt-4">
                   <TableRow
                     href="https://elicit.com"
                     title="Various fullstack features at Elicit"
@@ -135,7 +134,7 @@ export function Home() {
                   />
                 </div>
 
-                <p className="-mb-2 mt-6">
+                <p className="-mb-2 mt-3 sm:mt-4 md:mt-6">
                   Find my personal projects in my{" "}
                   <a href="/portfolio">portfolio</a>.
                 </p>
@@ -147,7 +146,7 @@ export function Home() {
           <SectionContainer>
             <SectionTitle></SectionTitle>
             <SectionContent>
-              <div className="flex flex-col space-y-3">
+              <div className="flex flex-col space-y-1.5 sm:space-y-2 md:space-y-3">
                 <TableRow
                   href="mailto:andere@uchicago.edu"
                   title="Email"
