@@ -59,15 +59,18 @@ export function Home() {
     <Detail.Container>
       <Detail.ContentContainer>
         {/* Avatar */}
-        <div className="justify-center flex mt-2 sm:mt-3 md:mt-5 mb-3 sm:mb-4 md:mb-6 md:ml-20">
+        <div className="justify-center flex flex-col items-center mt-2 sm:mt-3 md:mt-5 mb-3 sm:mb-4 md:mb-6 md:ml-20">
           <Image
             src="/static/img/gustav-courbet.png"
             alt="Emilio"
             width={421}
             height={281}
             quality={100}
-            className="rounded-md w-11/12 sm:w-4/5 md:w-auto mt-2 sm:mt-3 md:mt-5"
+            className="rounded-sm w-11/12 sm:w-4/5 md:w-auto mt-2 sm:mt-3 md:mt-5"
           />
+          <span className="text-sm sm:text-xs text-tertiary mt-2 text-center">
+            The Painter's Studio, Gustave Courbet
+          </span>
         </div>
 
         <div className="pb-12 sm:pb-16 md:pb-24 space-y-6 sm:space-y-8 md:space-y-16 dark:mt-8">
