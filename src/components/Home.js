@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { Detail } from './Detail'
+import Image from "next/image";
+import { Detail } from "./Detail";
 
 function SectionTitle(props) {
   return (
@@ -8,13 +8,11 @@ function SectionTitle(props) {
                  md:font-normal md:text-opacity-40"
       {...props}
     />
-  )
+  );
 }
 
 function SectionContent(props) {
-  return (
-    <div className="col-span-10" {...props} />
-  )
+  return <div className="col-span-10" {...props} />;
 }
 
 function TableRow({ href, title, subtitle, date }) {
@@ -25,12 +23,16 @@ function TableRow({ href, title, subtitle, date }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className="flex-none text-gray-700 group-hover:text-indigo-600 
-                      dark:text-gray-100 dark:group-hover:text-indigo-500">
+      <span
+        className="flex-none text-gray-700 group-hover:text-indigo-600 
+                      dark:text-gray-100 dark:group-hover:text-indigo-500"
+      >
         {title}
       </span>
-      <span className="w-full border-t border-gray-300 border-dashed shrink 
-                      dark:border-gray-800" />
+      <span
+        className="w-full border-t border-gray-300 border-dashed shrink 
+                      dark:border-gray-800"
+      />
       {subtitle && (
         <span className="flex-none text-tertiary text-[10px] sm:text-xs md:text-sm">
           {subtitle}
@@ -42,7 +44,7 @@ function TableRow({ href, title, subtitle, date }) {
         </span>
       )}
     </a>
-  )
+  );
 }
 
 function SectionContainer(props) {
@@ -51,7 +53,7 @@ function SectionContainer(props) {
       className="grid items-start grid-cols-1 md:grid-cols-12 gap-1.5 sm:gap-2 md:gap-6"
       {...props}
     />
-  )
+  );
 }
 
 export function Home() {
@@ -80,21 +82,25 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-2 sm:mt-3 md:mt-5 -mb-4 sm:-mb-6 md:-mb-8 text-xs sm:text-sm md:text-base">
                 <p>
-                  Hey, I'm Emi! I'm a senior at UChicago studying Mathematics. {" "}
-                  I like engineering efficient systems, math, and deep learning.
+                  Senior at UChicago studying Mathematics. I like engineering
+                  efficient systems, math, and deep learning.
                 </p>
 
                 <p>
-                  I also work part-time as an ML research engineer at{" "}
-                  <a href="https://en.wikipedia.org/wiki/Argonne_National_Laboratory" 
-                     target="_blank" 
-                     rel="noopener noreferrer">
+                  I work part-time as an ML research engineer at{" "}
+                  <a
+                    href="https://en.wikipedia.org/wiki/Argonne_National_Laboratory"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Argonne
-                  </a>,
-                  scaling transformer-based{" "}
-                  <a href="https://tung-nd.github.io/stormer/" 
-                     target="_blank"
-                     rel="noopener noreferrer">
+                  </a>
+                  , scaling transformer-based{" "}
+                  <a
+                    href="https://tung-nd.github.io/stormer/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     weather prediction models
                   </a>
                   .
@@ -176,5 +182,5 @@ export function Home() {
         </div>
       </Detail.ContentContainer>
     </Detail.Container>
-  )
+  );
 }
