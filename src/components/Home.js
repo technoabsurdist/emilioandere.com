@@ -86,7 +86,7 @@ export function Home() {
                   efficient systems, math, and deep learning.
                 </p>
 
-                <p>
+                {/* <p>
                   I work part-time as an ML research engineer at{" "}
                   <a
                     href="https://en.wikipedia.org/wiki/Argonne_National_Laboratory"
@@ -104,7 +104,7 @@ export function Home() {
                     weather prediction models
                   </a>
                   .
-                </p>
+                </p> */}
 
                 <p className="-mb-1 mt-3 sm:mt-4 md:mt-6">
                   In the past, I've done:
