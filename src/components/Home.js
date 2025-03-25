@@ -82,29 +82,9 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-2 sm:mt-3 md:mt-5 -mb-4 sm:-mb-6 md:-mb-8 text-xs sm:text-sm md:text-base">
                 <p>
-                  Senior at UChicago studying Mathematics. I like engineering
-                  efficient systems, math, and deep learning.
+                  Senior at UChicago studying mathematics with a focus on computer science. <br />  I like engineering
+                  systems from the ground up, math, and deep learning.
                 </p>
-
-                {/* <p>
-                  I work part-time as an ML research engineer at{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/Argonne_National_Laboratory"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Argonne
-                  </a>
-                  , scaling transformer-based{" "}
-                  <a
-                    href="https://tung-nd.github.io/stormer/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    weather prediction models
-                  </a>
-                  .
-                </p> */}
 
                 <p className="-mb-1 mt-3 sm:mt-4 md:mt-6">
                   In the past, I've done:

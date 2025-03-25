@@ -12,6 +12,12 @@ const projectsList = [
     link: "https://kojochallenges.com/",
   },
   {
+    name: "youtube-transcription-engine",
+    date: "2025",
+    tagline: "absurdly fast yb transcription engine",
+    link: "https://github.com/technoabsurdist/youtube-transcription-engine",
+  },
+  {
     name: "autocommit",
     date: "2024",
     tagline: "commit w/ auto-generated LLM messages",
