@@ -1,14 +1,15 @@
 const projectsList = [
+
   {
-    name: "kojo",
+    name: "molecule-rs",
     date: "2025",
-    tagline: "ios app for personalized coding lessons",
-    link: "https://www.thekojoapp.com/",
+    tagline: "rust protein visualizer",
+    link: "https://technoabsurdist.github.io/molecule-rs/",
   },
   {
     name: "kojo-challenges",
     date: "2025",
-    tagline: "llm-based coding challenges",
+    tagline: "llm-based coding challenges (300+ users)",
     link: "https://kojochallenges.com/",
   },
   {
@@ -24,7 +25,7 @@ const projectsList = [
     link: "https://github.com/technoabsurdist/autocommit",
   },
   {
-    name: "yb-transcriptions-2",
+    name: "yb-transcriptions",
     date: "2024",
     tagline: "better youtube transcriptions",
     link: "https://transcript-ai-iota.vercel.app/",
