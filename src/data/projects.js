@@ -3,7 +3,7 @@ const projectsList = [
   {
     name: "molecule-rs",
     date: "2025",
-    tagline: "rust protein visualizer",
+    tagline: "protein visualizer built w/ rust/wasm/3dmol",
     link: "https://technoabsurdist.github.io/molecule-rs/",
   },
   {
