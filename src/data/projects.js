@@ -4,7 +4,7 @@ const projectsList = [
     name: "molecule-rs",
     date: "2025",
     tagline: "protein visualizer built w/ rust/wasm/3dmol",
-    link: "https://technoabsurdist.github.io/molecule-rs/",
+    link: "https://molecule-rs.vercel.app/",
   },
   {
     name: "kojo-challenges",
