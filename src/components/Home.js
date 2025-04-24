@@ -97,7 +97,7 @@ export function Home() {
                   />
                   <TableRow
                     href="https://spherepay.co/ramp"
-                    title="On/off-ramp infrastructure at Sphere"
+                    title="On/off-ramp at Sphere, handles >$1B per year"
                     subtitle="Software Engineer Intern"
                   />
                   <TableRow
