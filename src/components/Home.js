@@ -82,8 +82,7 @@ export function Home() {
             <SectionContent>
               <div className="prose mt-2 sm:mt-3 md:mt-5 -mb-4 sm:-mb-6 md:-mb-8 text-xs sm:text-sm md:text-base">
                 <p>
-                  Senior at UChicago studying mathematics with a focus on computer science. <br />  I like engineering
-                  systems from the ground up, math, and deep learning.
+                  Senior at UChicago studying mathematics / computer science. <br />  I like engineering things into existence.
                 </p>
 
                 <p className="-mb-1 mt-3 sm:mt-4 md:mt-6">
