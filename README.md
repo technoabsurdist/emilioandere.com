@@ -1,2 +1,11 @@
 #### [emilioandere.com](https://www.emilioandere.com/)
-This repository holds the source code for my personal website. It is built with Next.js and uses Tailwind CSS for styling. To develop locally, clone the repo and install dependencies with `npm install`. Then, run `npm run dev` to start the development server.
+
+This repository holds the source code for my personal website. It is a simple static HTML site.
+
+To view the site locally, you can run:
+
+```
+npm run dev
+```
+
+This will serve the static files from the website directory using the `serve` package.
